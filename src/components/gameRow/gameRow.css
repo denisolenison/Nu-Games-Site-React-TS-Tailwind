@@ -1,0 +1,13 @@
+
+.gamerow {
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+  }

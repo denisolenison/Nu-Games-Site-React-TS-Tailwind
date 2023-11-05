@@ -1,0 +1,40 @@
+
+.gameblock {
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 25px;
+  width: 25%;
+  height: 15%;
+  align-items: center;
+  
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 4px rgba(255, 255, 255, 0.1);
+}
+  
+.gamename {
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+  
+.gameicon {
+  width: 180px;
+  height: 180px;
+  border-radius: 40px;
+  border: 3px solid black;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 10px;
+
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 4px rgba(255, 255, 255, 0.1);
+}

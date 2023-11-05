@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GameRows from './components/gameRow/gameRows';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="logos">
+      <span><img className="siteicon" src="logo2.png" alt="Nu Games"></img></span>
+      <span className="company">Nu Games</span>
+      </div>
+      <div id="welcomeSite">Hello, welcome to my site!</div>
+      <br></br>
+      <div id="demosText">My games (demos)</div>
+      <GameRows startI={0} endI={0} gamesType="big" key="bigGamesRows"></GameRows>
+      <div id="miniGamesText">My mini-games</div>
+      <GameRows startI={0} endI={21} gamesType="small" key="smallGamesRows"></GameRows>
     </div>
   );
 }
