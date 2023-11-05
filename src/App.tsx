@@ -1,21 +1,21 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import GameRows from './components/gameRow/gameRows';
+import { CommonGamesFullInfo, UnityGamesFullInfo } from './mocks/games.mocks';
+import GamePage from './pages/GamePage';
+import MainPage from './pages/MainPage';
+import UnityGamePage from './pages/UnityGamePage';
 
 function App() {
+  const games = CommonGamesFullInfo;
+  const unityGames = UnityGamesFullInfo;
   return (
-    <div>
-      <div id="logos">
-      <span><img className="siteicon" src="logo2.png" alt="Nu Games"></img></span>
-      <span className="company">Nu Games</span>
-      </div>
-      <div id="welcomeSite">Hello, welcome to my site!</div>
-      <br></br>
-      <div id="demosText">My games (demos)</div>
-      <GameRows startI={0} endI={0} gamesType="big" key="bigGamesRows"></GameRows>
-      <div id="miniGamesText">My mini-games</div>
-      <GameRows startI={0} endI={21} gamesType="small" key="smallGamesRows"></GameRows>
-    </div>
+    <Routes>
+      <Route path="/" element= { <MainPage />} />
+      <Route path="/index.html" element= { <MainPage />} />
+      {unityGames.map((game) => <Route path={`/unity_games/${game.id}.html`} element= { <UnityGamePage game={game} />} />)}
+      {games.map((game) => <Route path={`/games/${game.id}.html`} element= { <GamePage game={game} />} />)}
+    </Routes>
   );
 }
 

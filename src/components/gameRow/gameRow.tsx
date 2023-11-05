@@ -12,23 +12,24 @@ export function GameRow(props: any) {
 
     if (gamesType === "big") {
         for (let i = startI ; i <= endI ; ++i) {
-            let {name, shortName} = BigGamesShortDesc[i];
-            let links = getLinksOfGames(shortName);
+            let {name, shortName, isUnity} = BigGamesShortDesc[i];
+            let links = getLinksOfGames(shortName, isUnity);
+            console.log(links);
             gameRowItems.push({name, ...links, colorString: gamesColors[i%8]});
         }
     }
 
     if (gamesType === "small") {
         for (let i = startI ; i <= endI ; ++i) {
-            let {name, shortName} = SmallGamesShortDesc[i];
-            let links = getLinksOfGames(shortName);
+            let {name, shortName, isUnity} = SmallGamesShortDesc[i];
+            let links = getLinksOfGames(shortName, isUnity);
             gameRowItems.push({name, ...links, colorString: gamesColors[i%8]});
         }
     }
 
     return (
         <div className="gamerow">
-            {gameRowItems.map(game => (<GameBlock gameShort={game} key={game.shortName}></GameBlock>))}
+            {gameRowItems.map(game => <GameBlock gameShort={game} key={game.name}/>)}
         </div>
     );
 }
