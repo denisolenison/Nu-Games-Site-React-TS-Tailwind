@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+.dayBlock {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 60%;
+    padding: 10px;
+
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+    
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.15s linear;
+    -moz-transition: 0.15s linear;
+    -o-transition: 0.15s linear;
+    transition: 0.15s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.dateText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans';
+    font-size: 30px;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+.scoreBar {
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.15s linear;
+    -moz-transition: 0.15s linear;
+    -o-transition: 0.15s linear;
+    transition: 0.15s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.diaryText {
+    left: "auto";
+    right:"auto";
+    text-align:"justify";
+    padding: "15px";
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans';
+}

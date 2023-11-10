@@ -5,14 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 * {
-  margin: 5px;
-  padding: 5px;
 }
 
 html {
   font-family: 'Comfortaa', cursive;
-}
-
-body {
-  background: fixed center/100% url("bg.jpg");
 }

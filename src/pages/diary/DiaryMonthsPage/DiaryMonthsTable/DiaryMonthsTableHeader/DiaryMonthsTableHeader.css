@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.diaryMonthsHeader {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    height: 35px;
+    background-color: rgba(205, 231, 219, 1);
+    border-radius: 12px; 
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2.5px;
+    width: 100%;
+}
+
+.diaryMonthsHeaderTr {
+    width: 100%;
+    display: flex;
+}
+
+.diaryMonthsHeaderTr .diaryMonthsColumn8 {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  border-right: 0px rgba(0, 0, 0, 0.84) solid;
+  width: 12%;
+  height: 90%;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: -9px;
+  font-family: 'IBM Plex Sans';
+  font-size: 19px;
+}

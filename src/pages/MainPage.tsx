@@ -1,15 +1,13 @@
 import GameRows from "../components/gameRow/gameRows";
+import Header from "./header/Header";
 import './MainPage.css';
 
 
 function MainPage() {
+  document.body.style.backgroundImage = "url('./bg.jpg')";
     return (
-      <div>
-        <div id="logos">
-          <span><img className="siteicon" src="logo2.png" alt="Nu Games"></img></span>
-          <span className="company">Nu Games</span>
-          <button className="diaryGo" style={{marginRight: "50px", marginLeft: "auto"}}>Dev. Diary</button>
-        </div>
+      <div className="gamesPage">
+        <Header></Header>
         <div id="welcomeSite">Hello, welcome to my site!</div>
         <br></br>
         <div id="demosText">My games (demos)</div>

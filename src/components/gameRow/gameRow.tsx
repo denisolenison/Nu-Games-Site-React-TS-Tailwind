@@ -14,7 +14,6 @@ export function GameRow(props: any) {
         for (let i = startI ; i <= endI ; ++i) {
             let {name, shortName, isUnity} = BigGamesShortDesc[i];
             let links = getLinksOfGames(shortName, isUnity);
-            console.log(links);
             gameRowItems.push({name, ...links, colorString: gamesColors[i%8]});
         }
     }
