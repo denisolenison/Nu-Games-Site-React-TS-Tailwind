@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/denisolenison.github.io/static/css/main.2518a0ed.css",
+    "main.js": "/denisolenison.github.io/static/js/main.5fd2da28.js",
+    "index.html": "/denisolenison.github.io/index.html",
+    "main.2518a0ed.css.map": "/denisolenison.github.io/static/css/main.2518a0ed.css.map",
+    "main.5fd2da28.js.map": "/denisolenison.github.io/static/js/main.5fd2da28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2518a0ed.css",
+    "static/js/main.5fd2da28.js"
+  ]
+}
