@@ -1,10 +1,10 @@
 
 import { format, getDay } from 'date-fns';
-import { getMonthName, getWeekdayName, lZero, monthTypeToColor, overallToColor, overallToEmoji, pcToColor, pcToRank, pcToRankColor } from '../../../../../helpers/baseHelpers';
+import { getMonthName, getWeekdayName, lZero, monthTypeToColor, overallToColor, overallToEmoji, pcToColor, pcToRank, pcToRankColor, placeToColor } from '../../../../../helpers/baseHelpers';
 import '../DiaryMonthsTable.css';
 import './DiaryMonthsTableRow.css';
 
-function DiaryMonthsTableRow({month, index, average}: any) {
+function DiaryMonthsTableRow({month, index, average, total}: any) {
 
   const needToBorderBottom = month.month === 12 ? "5px black solid" : "2px grey solid";
 
@@ -62,6 +62,7 @@ function DiaryMonthsTableRow({month, index, average}: any) {
           <div className='diaryMonthsColumn6' style={{backgroundColor: pcToColor(month.pc)}}>{pcShort}</div>
           <div className='diaryMonthsColumn7' style={{backgroundColor: overallToColor(overall)}}>{overallToEmoji(overall)}</div>
           <div className='diaryMonthsColumn8' style={{backgroundColor: pcToRankColor(month.pc)}}>{pcToRank(month.pc)}</div>
+          <div className={`diaryMonthsColumn9 ${month.placeTotal <= 3 ? 'shining' : ''}`} style={{backgroundColor: placeToColor(month.placeTotal, total)}}>{month.placeTotal}</div>
         </div>
     );
   }

@@ -414,7 +414,7 @@ export const CommonGamesFullInfo = [
 
 export const UnityGamesFullInfo = [
     {
-        id: 'rix',
+        id: 'RIX',
         name: "Revolution Idle X",
         count: 0, //big game
         releaseDate: 'May 2023 (Demo)',
@@ -438,10 +438,10 @@ export const gamesColors = ["rgb(255, 230, 230, 0.8)", "rgb(255, 243, 230, 0.8)"
 
 export const getLinksOfGames: any = (shortName: string, isUnity: boolean = false) => {
     return {
-        link: isUnity ? `unity_games/${shortName}.html` : `games/${shortName}.html`,
+        link: isUnity ? `unity_games/${shortName}` : `games/${shortName}`,
         iconLink: isUnity ? `unity_games/icons/${shortName}.png` :  `games/icons/${shortName}.png`,
     }
 }
-export const getIconLinkOnPage: any = (shortName: string) => {
-    return `icons/${shortName}.png`
+export const getIconLinkOnPage: any = (shortName: string, isUnity: boolean = false) => {
+    return isUnity ? `unity_games/icons/${shortName}.png` : `games/icons/${shortName}.png`
 }

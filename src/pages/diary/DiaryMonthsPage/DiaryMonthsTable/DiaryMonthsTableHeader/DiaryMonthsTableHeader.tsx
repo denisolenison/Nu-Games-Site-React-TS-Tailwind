@@ -15,6 +15,7 @@ function DiaryMonthsTable() {
             <div className='diaryMonthsColumn6'>%</div>
             <div className='diaryMonthsColumn7'>Overall</div>
             <div className='diaryMonthsColumn8'>Grade</div>
+            <div className='diaryMonthsColumn9'>Place</div>
           </div>
         </div>
     );

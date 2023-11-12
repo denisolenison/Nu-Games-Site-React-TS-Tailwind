@@ -117,3 +117,11 @@ export const pcToRankColor = (pc: number) => {
     if (pc > 0.125) return "rgb(180,0,0)";
     return "rgb(125,0,0)";
 }
+
+export const placeToColor = (place: number, placeMax: number) => {
+    if (place === 1) return "gold";
+    if (place === 2) return "silver";
+    if (place === 3) return "peru";
+    return pcToColor(1 - (place / placeMax));
+}
+

@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import { gamesColors, getIconLinkOnPage } from '../mocks/games.mocks';
 import './GamePage.css';
 
 function UnityGamePage({game}: any) {
 
     const color = gamesColors[game.count % 8];
-    document.body.style.backgroundImage = "url('../bg.jpg')";
+    document.body.style.backgroundImage = "url('bg_games.jpg')";
 
     const goFullscreen = (id: any) => {
       var element: any = document.getElementById(id);
@@ -18,12 +19,12 @@ function UnityGamePage({game}: any) {
     return (
       <>
         <div className="gp_gameblock" style={{backgroundColor: color}}>
-            <img className="gameicon" src={getIconLinkOnPage(game.id)}></img>
+            <img className="gameicon" src={getIconLinkOnPage(game.id, true)}></img>
             <div className="gameblock2" style={{width: "100%"}}>
             <a className="gamename">{game.name}</a>
             <a>Release Date:</a>
             <a className="rdate">{game.releaseDate}</a>
-            <a href="../index.html" style={{color: "darkblue", fontWeight: '700', fontSize: "20px"}}>Return to main page</a>
+            <Link to="../" style={{color: "darkblue", fontWeight: '700', fontSize: "20px"}}>Return to main page</Link>
             </div>
             <div className="gameblock2" style={{marginLeft: "10%"}}>
             <a className="gamename">Description</a>

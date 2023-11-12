@@ -4,7 +4,7 @@ import './MainPage.css';
 
 
 function MainPage() {
-  document.body.style.backgroundImage = "url('./bg.jpg')";
+  document.body.style.backgroundImage = "url('bg_games.jpg')";
     return (
       <div className="gamesPage">
         <Header></Header>

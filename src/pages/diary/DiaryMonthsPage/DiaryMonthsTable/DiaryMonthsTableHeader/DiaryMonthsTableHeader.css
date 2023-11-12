@@ -28,11 +28,16 @@
   display: block;
   flex-direction: column;
   text-align: center;
-  border-right: 0px rgba(0, 0, 0, 0.84) solid;
-  width: 12%;
-  height: 90%;
-  border-radius: 0px 10px 10px 0px;
-  padding-top: -9px;
-  font-family: 'IBM Plex Sans';
-  font-size: 19px;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+.diaryMonthsHeaderTr .diaryMonthsColumn9 {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 2px;
+  font-size: 16px;
 }

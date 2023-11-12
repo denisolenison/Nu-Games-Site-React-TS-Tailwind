@@ -14,12 +14,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element= { <MainPage />} />
-      <Route path="/index.html" element= { <MainPage />} />
       <Route path="/diary" element= { <DiaryPage />} />
       <Route path="/diary/days" element= { <DiaryPage />} />
       <Route path="/diary/months" element= { <DiaryMonthsPage />} />
-      {unityGames.map((game, index) => <Route path={`/unity_games/${game.id}.html`} element= { <UnityGamePage game={game} />}  key={index} />)}
-      {games.map((game, index) => <Route path={`/games/${game.id}.html`} element= { <GamePage game={game} />}  key={index} />)}
+      {unityGames.map((game, index) => <Route path={`/unity_games/${game.id}`} element= { <UnityGamePage game={game} />}  key={index} />)}
+      {games.map((game, index) => <Route path={`/games/${game.id}`} element= { <GamePage game={game} />}  key={index} />)}
     </Routes>
   );
 }

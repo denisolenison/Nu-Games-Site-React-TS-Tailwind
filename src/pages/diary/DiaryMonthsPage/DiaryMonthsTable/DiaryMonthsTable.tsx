@@ -67,6 +67,7 @@ function DiaryMonthsTable() {
         pc: percent,
         percent: percText,
         place: 4,
+        placeTotal: 0,
       }
   })
 
@@ -90,11 +91,19 @@ function DiaryMonthsTable() {
     }
   }
 
+  let allData = [...newDiaryMonths];
+  allData.sort((a, b) => b.score - a.score);
+  for (let m = 0 ; m < allData.length ; ++m) {
+    let res = newDiaryMonths.find((month2:any) => (month2.year === allData[m].year && month2.month === allData[m].month));
+    if (res) res.placeTotal = m+1;
+  }
+
     return (
         <div className='diaryMonthsTable w-full relative'>
           <DiaryMonthsTableHeader/>
           <div>
-            {newDiaryMonths.map((ndm: any, index) => <DiaryMonthsTableRow month={ndm} index={index+1} average={avg} key={getMonthId(ndm)} />)}
+            {newDiaryMonths.map((ndm: any, index) => <DiaryMonthsTableRow month={ndm} index={index+1} 
+            average={avg} total={newDiaryMonths.length} key={getMonthId(ndm)} />)}
           </div>
         </div>
     );
