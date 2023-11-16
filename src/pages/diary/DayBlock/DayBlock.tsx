@@ -2,7 +2,7 @@ import AtmosphereBlock from './AtmosphereBlock/AtmosphereBlock';
 import './DayBlock.css';
 import InconsistencyBlock from './InconsistencyBlock/InconsistencyBlock';
 import ScoreBlock from './ScoreBlock/ScoreBlock';
-import { format, getDay, getMonth, getYear } from 'date-fns'
+import { format, getDay } from 'date-fns'
 import { ru } from 'date-fns/locale';
 import { lZero, monthTypeToColor } from '../../../helpers/baseHelpers';
 
@@ -12,7 +12,7 @@ function DayBlock({dayData, textData}: any) {
 
     let newDate = format(date, 'd MMMM yyyy', {locale: ru});
 
-    const weekDay = getDay(new Date(`${dayData.year}-${dayData.month}-01`));
+    const weekDay = getDay(new Date(`${dayData.year}-${lZero(dayData.month)}-01`));
 
     let bgColor = monthTypeToColor(weekDay);
 

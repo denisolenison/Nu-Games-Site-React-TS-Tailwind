@@ -36,6 +36,11 @@ export const getWeekdayName = (weekday: any) => {
     return weekdays[weekday];
 };
 
+export const getWeekdayNameNext = (weekday: any) => {
+    const weekdays = ['воскресеньем', 'понедельником', 'вторником', 'Ы', 'твороженницей', 'пятницей', 'субботой'];
+    return weekdays[weekday];
+};
+
 export const getWeekdayNameShort = (weekday: any) => {
     const weekdays = ['Вс', 'Пн', 'Вт', 'Ы', 'Тв', 'Пт', 'Сб'];
     return weekdays[weekday];

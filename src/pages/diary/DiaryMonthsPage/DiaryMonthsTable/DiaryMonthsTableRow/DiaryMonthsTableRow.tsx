@@ -3,8 +3,9 @@ import { format, getDay } from 'date-fns';
 import { getMonthName, getWeekdayName, lZero, monthTypeToColor, overallToColor, overallToEmoji, pcToColor, pcToRank, pcToRankColor, placeToColor } from '../../../../../helpers/baseHelpers';
 import '../DiaryMonthsTable.css';
 import './DiaryMonthsTableRow.css';
+import { Link } from 'react-router-dom';
 
-function DiaryMonthsTableRow({month, index, average, total}: any) {
+function DiaryMonthsTableRow({month, index, average, total, monthText}: any) {
 
   const needToBorderBottom = month.month === 12 ? "5px black solid" : "2px grey solid";
 
@@ -48,11 +49,14 @@ function DiaryMonthsTableRow({month, index, average, total}: any) {
 
   const pcShort = Math.round(month.pc * 100) + "%";
 
-
   return (
         <div className='diaryMonthsRow' style={{backgroundColor: typeColor, borderBottom: needToBorderBottom}}>
           <div className='diaryMonthsColumn1'>{index}</div>
+          {
+          (monthText === 'no') ?
           <div className='diaryMonthsColumn2'>{monthName}</div>
+          : <Link to={`/diary/month/${monthText.year}/${monthText.month}`} className='diaryMonthsColumn2'>{monthName}</Link>
+          }
           <div className='diaryMonthsColumn3'>
             <div className='monthScoreBar' style={{width: month.percent}}></div>
             <div className='monthScore'>{scoreText}</div>
