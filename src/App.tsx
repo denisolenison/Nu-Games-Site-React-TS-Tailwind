@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { CommonGamesFullInfo, UnityGamesFullInfo } from './mocks/games.mocks';
@@ -15,6 +15,7 @@ function App() {
   const games = CommonGamesFullInfo;
   const unityGames = UnityGamesFullInfo;
   const {newDiaryMonths, avg} = diaryMontsInit(diaryMonths);
+
   return (
     <Routes>
       <Route path="/" element= { <MainPage />} />

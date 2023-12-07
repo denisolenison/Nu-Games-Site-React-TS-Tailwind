@@ -5,6 +5,7 @@ import './GamePage.css';
 function GamePage({game}: any) {
     
     document.body.style.backgroundImage = "url('bg_games.jpg')";
+    let lang = localStorage.getItem("lang") ?? "en";
     const color = gamesColors[game.count % 8];;
 
     return (
@@ -13,13 +14,13 @@ function GamePage({game}: any) {
             <img className="gameicon" src={getIconLinkOnPage(game.id)}></img>
             <div className="gameblock2" style={{width: "100%"}}>
               <a className="gamename">{game.name}</a>
-              <a>Release Date:</a>
-              <a className="rdate">{game.releaseDate}</a>
-              <Link to="../" style={{color: "darkblue", fontWeight: '700', fontSize: "20px"}}>Return to main page</Link>
+              <a>{lang == "en" ? "Release Date:" : "Дата выхода: "}</a>
+              <a className="rdate">{lang == "en" ? game.releaseDate : game.releaseDateRu}</a>
+              <Link to="../" style={{color: "darkblue", fontWeight: '700', fontSize: "20px"}}>{lang == "en" ? "Return to main page" : "Вернуться на главную"}</Link>
             </div>
             <div className="gameblock2" style={{marginLeft: "10%"}}>
-              <a className="gamename">Description</a>
-              <a className="gamedesc" style={{textAlign: 'center'}}>{game.description}</a>
+              <a className="gamename">{lang == "en" ? "Description" : "Описание"}</a>
+              <a className="gamedesc" style={{textAlign: 'center'}}>{lang == "en" ? game.description : game.descriptionRu}</a>
             </div>
         </div>
       <p style={{textAlign: 'center'}}>

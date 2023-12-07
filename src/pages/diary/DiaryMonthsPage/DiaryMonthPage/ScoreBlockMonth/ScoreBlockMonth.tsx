@@ -5,6 +5,8 @@ function ScoreBlockMonth({score, pc}: any) {
 
 
     let [green, red, blue] : any[] = [200, 200, 0];
+    
+    let lang = localStorage.getItem("lang") ?? "en";
 
     if (pc > 50) {
         green = 200;
@@ -32,7 +34,7 @@ function ScoreBlockMonth({score, pc}: any) {
             </h2>
             <h1 style={{ position: "relative", bottom: "17px",
                 left: "auto", right:"auto", textAlign:"center"}}>
-                <span className="scoreTxt">Оценка: </span>
+                <span className="scoreTxt">{lang == "ru" ? "Оценка: " : "Score: "}</span>
                 <span className="scoreTxt"><b>{Math.round(score*10)/10}</b></span>
                 <span className="scoreTxt"> ({Math.round(pc)}%)</span></h1>
           </div>

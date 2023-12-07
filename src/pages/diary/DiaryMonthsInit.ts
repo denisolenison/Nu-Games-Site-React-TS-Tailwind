@@ -59,6 +59,7 @@ export const diaryMontsInit = (diaryMonths: any) => {
           percent: percText,
           place: 4,
           placeTotal: 0,
+          hasDeath: dMonth.hasDeath ? true : false,
         }
     })
   

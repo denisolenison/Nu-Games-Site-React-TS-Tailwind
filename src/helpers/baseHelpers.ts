@@ -26,18 +26,25 @@ export const lZero = (num: number) => {
     return num.toString();
 }
 
-export const getMonthName = (date: any) => {
-    const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+export const getMonthName = (date: any, lang: string) => {
+
+    let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     return months[date.getMonth()];
 };
 
-export const getWeekdayName = (weekday: any) => {
-    const weekdays = ['Воскресенье', 'Понедельник', 'Вторник', 'Ы', 'Твороженница', 'Пятница', 'Суббота'];
+export const getWeekdayName = (weekday: any, lang: string) => {
+    let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Y', 'Curd', 'Friday', 'Saturday'];
+    if (lang == "ru") {
+        weekdays = ['Воскресенье', 'Понедельник', 'Вторник', 'Ы', 'Твороженница', 'Пятница', 'Суббота'];
+    }
     return weekdays[weekday];
 };
 
-export const getWeekdayNameNext = (weekday: any) => {
-    const weekdays = ['воскресеньем', 'понедельником', 'вторником', 'Ы', 'твороженницей', 'пятницей', 'субботой'];
+export const getWeekdayNameNext = (weekday: any, lang: string) => {
+    let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Y', 'Curd', 'Friday', 'Saturday'];
+    if (lang == "ru") {
+        weekdays = ['воскресеньем', 'понедельником', 'вторником', 'Ы', 'твороженницей', 'пятницей', 'субботой'];
+    }
     return weekdays[weekday];
 };
 

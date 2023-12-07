@@ -26,8 +26,30 @@
     position: relative;
     margin-top: -33px;
     font-family: 'IBM Plex Sans';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
+}
+
+.worst {
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  color: darkred;
+  font-size: 18px;
+}
+
+.best {
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  color: darkgreen;
+  font-size: 18px;
+}
+
+.diaryMonthsColumn2 .worst {
+  margin-top: -2px;
+}
+
+.diaryMonthsColumn2 .best {
+  margin-top: -2px;
 }
 
 

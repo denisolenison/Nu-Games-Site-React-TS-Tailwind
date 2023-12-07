@@ -1,9 +1,9 @@
 
 
-function AtmosphereBlock({atmosphere}: any) {
+function AtmosphereBlock({atmosphere, lang}: any) {
 
     return (
-      <h1 className="mt-1" style={{ left: "auto", right:"auto", textAlign:"center"}}>Атмосфера: 
+      <h1 className="mt-1" style={{ left: "auto", right:"auto", textAlign:"center"}}>{lang == "ru" ? "Атмосфера: " : "Atmosphere: "}
            {atmosphere > 0 ? (<span className="text-green-600 font-bold"> +{atmosphere} </span>)
            : (atmosphere == 0 ? (<span className="text-yellow-600 font-bold"> {atmosphere} </span>)
            : (<span className="text-red-600 font-bold"> {atmosphere} </span>))}</h1>

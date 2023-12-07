@@ -1,7 +1,7 @@
 
 import './ScoreBlock.css';
 
-function ScoreBlock({score}: any) {
+function ScoreBlock({score, lang}: any) {
 
     let perc = 100;
     if (score >= 20) perc = 100 + (score-20)*10;
@@ -42,7 +42,7 @@ function ScoreBlock({score}: any) {
             </h2>
             <h1 style={{ position: "relative", bottom: "10px",
                 left: "auto", right:"auto", textAlign:"center"}}>
-                <span>Оценка: </span>
+                <span>{lang == "ru" ? "Оценка: " : "Score: "}</span>
                 <span><b>{Math.round(score*10)/10}</b></span>
                 <span> / 25 ({perc}%)</span></h1>
           </div>

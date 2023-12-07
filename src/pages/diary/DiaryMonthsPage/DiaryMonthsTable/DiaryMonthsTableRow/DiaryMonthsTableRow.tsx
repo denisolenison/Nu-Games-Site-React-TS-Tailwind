@@ -7,11 +7,15 @@ import { Link } from 'react-router-dom';
 
 function DiaryMonthsTableRow({month, index, average, total, monthText}: any) {
 
+
+  let lang = localStorage.getItem("lang") ?? "en";
+
+
   const needToBorderBottom = month.month === 12 ? "5px black solid" : "2px grey solid";
 
   const dateFirst = new Date(`${month.year}-${lZero(month.month)}-01`)
 
-  const monthName = format(dateFirst, `${getMonthName(dateFirst)} yyyy`);
+  const monthName = format(dateFirst, `${lang == "ru" ? getMonthName(dateFirst, lang) : 'MMMM'} yyyy`);
   const weekDay = getDay(dateFirst);
 
   const typeColor = monthTypeToColor(weekDay);
@@ -54,15 +58,19 @@ function DiaryMonthsTableRow({month, index, average, total, monthText}: any) {
           <div className='diaryMonthsColumn1'>{index}</div>
           {
           (monthText === 'no') ?
-          <div className='diaryMonthsColumn2'>{monthName}</div>
-          : <Link to={`/diary/month/${monthText.year}/${monthText.month}`} className='diaryMonthsColumn2'>{monthName}</Link>
+          <div className='diaryMonthsColumn2'><p className={`${month.placeTotal == total ? 'worst' : ''}${month.placeTotal == 1 ? 'best' : ''}`}>
+            {monthName + (month.hasDeath ? ' 💀' : '')}
+            </p></div>
+          : <Link to={`/diary/month/${monthText.year}/${monthText.month}`} className='diaryMonthsColumn2'>
+            <p className={`${month.placeTotal == total ? 'worst' : ''}${month.placeTotal == 1 ? 'best' : ''}`}>{monthName + (month.hasDeath ? ' 💀' : '')}</p>
+            </Link>
           }
           <div className='diaryMonthsColumn3'>
             <div className='monthScoreBar' style={{width: month.percent}}></div>
-            <div className='monthScore'>{scoreText}</div>
+            <div><p className={`monthScore ${month.placeTotal == total ? 'worst' : ''}${month.placeTotal == 1 ? 'best' : ''}`}>{scoreText}</p></div>
           </div>
           <div className='diaryMonthsColumn4'>{month.place}</div>
-          <div className='diaryMonthsColumn5'>{getWeekdayName(weekDay)}</div>
+          <div className='diaryMonthsColumn5'>{getWeekdayName(weekDay, lang)}</div>
           <div className='diaryMonthsColumn6' style={{backgroundColor: pcToColor(month.pc)}}>{pcShort}</div>
           <div className='diaryMonthsColumn7' style={{backgroundColor: overallToColor(overall)}}>{overallToEmoji(overall)}</div>
           <div className='diaryMonthsColumn8' style={{backgroundColor: pcToRankColor(month.pc)}}>{pcToRank(month.pc)}</div>
