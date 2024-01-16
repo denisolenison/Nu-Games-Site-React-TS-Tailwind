@@ -1,6 +1,6 @@
 import { addMonths, format, getDay, getMonth, getYear } from "date-fns";
 import { getMonthName, getWeekdayName, getWeekdayNameNext, lZero, monthTypeToColor } from "../../../../helpers/baseHelpers";
-import { diaryMonthsTexts } from "../../diary.mocks";
+import { diaryMonthsTexts } from "../../../../mocks/diary.mocks";
 import ScoreBlockMonth from "./ScoreBlockMonth/ScoreBlockMonth";
 
 import './DiaryMonthPage.css';

@@ -27,9 +27,19 @@ export const lZero = (num: number) => {
 }
 
 export const getMonthName = (date: any, lang: string) => {
-
     let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    if (lang == "en") {
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    }
     return months[date.getMonth()];
+};
+
+export const getMonthName2 = (month: any, lang: string) => {
+    let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    if (lang == "en") {
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    }
+    return months[month - 1];
 };
 
 export const getWeekdayName = (weekday: any, lang: string) => {

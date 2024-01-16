@@ -117,6 +117,11 @@ export const SmallGamesShortDesc = [
         shortName: 'sli',
         isUnity: false,
     },
+    {
+        name: "Emoji Clicker",
+        shortName: 'emoji',
+        isUnity: true,
+    },
 ]
 
 export const CommonGamesFullInfo = [
@@ -546,6 +551,18 @@ export const UnityGamesFullInfo = [
            Наслаждайтесь безграничными возможностями престижа, продвижения по службе и бесконечным игровым процессом. Начните веселиться прямо сейчас!
            Скоро в Steam!`,
         gameLink: 'https://i.simmer.io/@NuGames/revolution-idle-x',
+        gameWidth: "1136",
+        gameHeight: "640",
+    },
+    {
+        id: 'emoji',
+        name: "Emoji Clicker",
+        count: 1,
+        releaseDate: 'November 2023',
+        releaseDateRu: 'Ноябрь 2023',
+        description: `There's not even anything to write about. Emoji Clicker is a game I decided to create, but it horribly failed as I had tried posting it onto certain game hosting websites, but they rejected my game onwards. The objective is to click the emoji and gain Fun from it. You can also level up to explore further content, such as accessories and reset points!`,
+        descriptionRu: `Тут даже писать нечего. Это самая провальная игра, которую не приняли никуда даже хуй знает из-за чего.`,
+        gameLink: 'https://i.simmer.io/@NuGames/emoji-clicker',
         gameWidth: "1136",
         gameHeight: "640",
     },

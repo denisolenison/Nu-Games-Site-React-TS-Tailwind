@@ -16,7 +16,7 @@ function MainPage() {
         <div id="demosText">{lang == "en" ? "My games (demos)" : "Мои игры (демки)"}</div>
         <GameRows startI={0} endI={0} gamesType="big"/>
         <div id="miniGamesText">{lang == "en" ? "My mini-games" : "Мои миниигры"}</div>
-        <GameRows startI={0} endI={21} gamesType="small"/>
+        <GameRows startI={0} endI={22} gamesType="small"/>
       </div>
     );
   }

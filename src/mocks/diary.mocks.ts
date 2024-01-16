@@ -3,167 +3,8 @@
 export let language = localStorage.getItem("language") ?? "en";
 
 
-export const diaryDays = [
-    {
-        id: 1,
-        year: 2023,
-        month: 10,
-        day: 30,
-        score: 8.8,
-        importance: 2,
-        inconsistency_min: 4.5,
-        inconsistency_max: 3,
-        atmosphere: 2,
-    },
-    {
-        id: 2,
-        year: 2023,
-        month: 10,
-        day: 31,
-        score: 8.3,
-        importance: 1,
-        inconsistency_min: 2,
-        inconsistency_max: 2,
-        atmosphere: 1,
-    },
-    {
-        id: 3,
-        year: 2023,
-        month: 11,
-        day: 1,
-        score: 8.5,
-        importance: 1,
-        inconsistency_min: 1.5,
-        inconsistency_max: 1.5,
-        atmosphere: 2,
-    },
-    {
-        id: 4,
-        year: 2023,
-        month: 11,
-        day: 2,
-        score: 8.2,
-        importance: 1,
-        inconsistency_min: 1.5,
-        inconsistency_max: 1.5,
-        atmosphere: 0,
-    },
-    {
-        id: 5,
-        year: 2023,
-        month: 11,
-        day: 3,
-        score: 9,
-        importance: 2,
-        inconsistency_min: 1,
-        inconsistency_max: 1,
-        atmosphere: 3,
-    },
-    {
-        id: 6,
-        year: 2023,
-        month: 11,
-        day: 4,
-        score: 8.1,
-        importance: 1,
-        inconsistency_min: 2,
-        inconsistency_max: 1,
-        atmosphere: -1,
-    },
+export const isAdmin = false;
 
-];
-
-export const diaryDayTexts = [
-    {
-        id: 1,
-        year: 2023,
-        month: 10,
-        day: 30,
-        fullText: `An ambiguous day, but ended well in the end. It's not a day off anymore, so went to some doctors today who needed to be seen. Again, slept a lot. But I decided to punish an acquaintance, Katya, for ignoring me. And in the end it came out pretty hard, and it turned out in the end that she had my messages went down, and it was required to write again. Everything settled, and in general, she ended up being a very good girl. I'm sorry about it now. But in the end we had a very good conversation with her. There were no procedures at the clinic yet, I just made an appointment.`,
-    },
-    {
-        id: 2,
-        year: 2023,
-        month: 10,
-        day: 31,
-        fullText: `Still making further appointments for treatments, nothing has happened yet. I slept a lot again, the medication makes me very drowsy. I was texting with friends, but I didn't communicate much in the ward. Nothing interesting almost, except that Vika from the dream decided to open her profile. There were two tense moments. First of all, she was in 8th grade instead of 9th, which means that Canada will probably have to be postponed until 2027. That's if it works out with her eventually. And second of all, I didn't see any friends from out of her town. Well, in exactly two months, we'll see. She seems like a nice girl. November is true, alas, could not be met, I fell asleep early.`,
-    },
-    {
-        id: 3,
-        year: 2023,
-        month: 11,
-        day: 1,
-        fullText: `And here it is - a purely male month) And that means it's time to do male things) But so far on the first day of this month there was nothing particularly male, well, except for the symbol of the month) Today I went again to the doctors for appointments. The only procedure so far is electrosleep, I remember it, it's a cool thing. I decided to do a little work with the site, but then I got sleepy, I still sleep a lot, though not as much as I used to. Decided to go for a little walk even, the weather is really nice today! We'll see how the men's month goes next.`,
-    },
-    {
-        id: 4,
-        year: 2023,
-        month: 11,
-        day: 2,
-        fullText: `Went for a couple of treatments today - electroson and bos. I think I also saw a therapist today, but they didn't schedule anything. The guy who had the extension cord checked out today, and they put another guy in right away. So I kind of had to be without a computer all day today. I also bought some food at the cafeteria, I don't eat much here.`,
-    },
-    {
-        id: 5,
-        year: 2023,
-        month: 11,
-        day: 3,
-        fullText: `Not a bad day, that's for sure. Only went to the bos for treatments. Also, my mom came over today and I got an extension cord and there was a lot of goodies + more food from the mac. Not sleeping as much as I used to. Worked on the website, again. Now I'm already rewriting it under React, and by the way, I'm getting pretty good at it. I worked for about an hour, maybe even two. Also Ruslan wrote me today that when I plan to go to Canada, I can write to his brother. And that I could bring a girl with me in a few years. I mean, even if, for example, with this Vika (naturally the one from the dream, not Annie Knitts). I can fly to Canada in 2026 and in 2027 already marry her and take her with me. I'm also glad that Ruslan was offered something about his tea store or store, he may make a lot of money soon) Interesting day overall.`,
-    },
-    {
-        id: 6,
-        year: 2023,
-        month: 11,
-        day: 4,
-        fullText: `There's usually some kind of trouble on the 4th of Y-months. Today was okay, but boring. I was still working on the website a little bit. But the problem was that Pete had to call somewhere, and I never did, and then I got pressed for it in the end. Because I thought it was something to do with Otajon again.`,
-    },
-
-];
-
-export const diaryDayTextsRu = [
-    {
-        id: 1,
-        year: 2023,
-        month: 10,
-        day: 30,
-        fullText: `Неоднозначный день, но закончился хорошо в итоге. Уже не выходной, так что к некоторым врачам сходил сегодня, к кому надо было. Опять же, очень много спал. Но я решил проучить одну знакомую, Катю, за то что игнорила. И в итоге довольно жестко вышло, а оказалось в итоге, что у нее сообщения вниз уходили, а надо было еще раз написать. Все уладили, и вообще она в итоге очень хорошей тянкой оказалась. Даже стыдно теперь перед ней за это. Но в конце концов мы уже весьма хорошо пообщались с ней. Процедур в клинике пока не было, я только записывался.`,
-    },
-    {
-        id: 2,
-        year: 2023,
-        month: 10,
-        day: 31,
-        fullText: `Все дальше записываюсь на процедуры, пока ничего не было. Спал снова много, от препаратов сильно клонит в сон. Переписывался с друзьями, а вот в палате не особо общался. Ничего интересного почти, кроме того, что Вика из сна решила открыть страницу. Было два напряженных момента. Во первых она оказалась не в 9, а в 8 классе, а это значит что походу Канаду придется до 2027 отложить. Ну это если у меня сложится с ней в итоге. А во вторых не заметил друзей из других городов у нее. Ну через ровно два месяца будет уже все видно. А так вроде хорошая девушка по виду. Ноябрь правда, увы не смог встретить, вырубился раньше.`,
-    },
-    {
-        id: 3,
-        year: 2023,
-        month: 11,
-        day: 1,
-        fullText: `И вот он - чисто мужской месяц) А значит пора заниматься мужскими делами) Но пока в первый день этого месяца чего-то особо мужского не было, ну кроме символа месяца) Сегодня я ходил снова ко врачам на записи. Из процедур пока только электросон, я помню его, прикольная штука. Решил немного с сайтом поразбираться, но потом мне спать захотелось, все еще сплю много, хоть уже и не так, как раньше. Решил немного погулять даже, погода очень хорошая сегодня! Посмотрим, как мужской месяц пойдет дальше.`,
-    },
-    {
-        id: 4,
-        year: 2023,
-        month: 11,
-        day: 2,
-        fullText: `Сходил сегодня на пару процедур - на электросон и на бос. Вроде еще у терапевта был сегодня, ничего особо не назначили. Парень у которого был удлинитель сегодня выписался, и подселили сразу же другого парня. Так что пришлось без компа сегодня весь день вроде бы сидеть. Еще в буфете купил покушать, я вообще ща мало довольно ем тут.`,
-    },
-    {
-        id: 5,
-        year: 2023,
-        month: 11,
-        day: 3,
-        fullText: `Неплохой день - это точно. На процедуры только на бос сходил. Еще мама сегодня приехала и я взял удлинитель и еще там много чего вкусного было + из мака еще еда. Уже не так много сплю как раньше. Работал над сайтом, снова. Теперь уже под реакт переписываю, и кстати, уже неплохо получается. Где-то около часа, а может даже два поработал. Еще Руслан написал мне сегодня про то, что я когда буду планировать в Канаду, могу его брату написать. И что можно взять тянку с собой через несколько лет. То есть даже, например, если с этой Викой (естественно которая из сна, а не Энни Ниттс). Я могу в Канаду в 2026 улететь, а в 2027 уже жениться на ней и забрать ее с собой. Еще рад, что Руслану что-то предложили по поводу своей чайной лавки или магазина, он может скоро много зарабатывать) Интересный день в целом.`,
-    },
-    {
-        id: 6,
-        year: 2023,
-        month: 11,
-        day: 4,
-        fullText: `Обычно 4-ого в ышные месяца происходят какие-то неприятности. Сегодня в целом день норм был, правда скучно все же. Немного еще с сайтом разбирался. Но проблема была, что Пете надо было куда-то позвонить, а я так и не позвонил и потом меня за это прессанули в итоге. Потому что я думал, что опять что-то с Отажоном связанное.`,
-    },
-
-];
 
 export const diaryMonths = [
     {
@@ -382,514 +223,7 @@ export const diaryMonths = [
         year: 2016,
         month: 11,
         baseScore: 77.35
-    },
-    {
-        id: 37,
-        year: 2016,
-        month: 12,
-        baseScore: 57.26
-    },
-    {
-        id: 38,
-        year: 2017,
-        month: 1,
-        baseScore: 47.36
-    },
-    {
-        id: 39,
-        year: 2017,
-        month: 2,
-        baseScore: 47.41
-    },
-    {
-        id: 40,
-        year: 2017,
-        month: 3,
-        baseScore: 67.23
-    },
-    {
-        id: 41,
-        year: 2017,
-        month: 4,
-        baseScore: 98.42
-    },
-    {
-        id: 42,
-        year: 2017,
-        month: 5,
-        baseScore: 67.54
-    },
-    {
-        id: 43,
-        year: 2017,
-        month: 6,
-        baseScore: 77.93
-    },
-    {
-        id: 44,
-        year: 2017,
-        month: 7,
-        baseScore: 86.88
-    },
-    {
-        id: 45,
-        year: 2017,
-        month: 8,
-        baseScore: 94.54
-    },
-    {
-        id: 46,
-        year: 2017,
-        month: 9,
-        baseScore: 100.21
-    },
-    {
-        id: 47,
-        year: 2017,
-        month: 10,
-        baseScore: 75.77
-    },
-    {
-        id: 48,
-        year: 2017,
-        month: 11,
-        baseScore: 78.83
-    },
-    {
-        id: 49,
-        year: 2017,
-        month: 12,
-        baseScore: 71
-    },
-    {
-        id: 50,
-        year: 2018,
-        month: 1,
-        baseScore: 73.81
-    },
-    {
-        id: 51,
-        year: 2018,
-        month: 2,
-        baseScore: 60.33
-    },
-    {
-        id: 52,
-        year: 2018,
-        month: 3,
-        baseScore: 70.55
-    },
-    {
-        id: 53,
-        year: 2018,
-        month: 4,
-        baseScore: 96.34
-    },
-    {
-        id: 54,
-        year: 2018,
-        month: 5,
-        baseScore: 75.4
-    },
-    {
-        id: 55,
-        year: 2018,
-        month: 6,
-        baseScore: 94.9
-    },
-    {
-        id: 56,
-        year: 2018,
-        month: 7,
-        baseScore: 85.22
-    },
-    {
-        id: 57,
-        year: 2018,
-        month: 8,
-        baseScore: 73
-    },
-    {
-        id: 58,
-        year: 2018,
-        month: 9,
-        baseScore: 55.06
-    },
-    {
-        id: 59,
-        year: 2018,
-        month: 10,
-        baseScore: 70.68
-    },
-    {
-        id: 60,
-        year: 2018,
-        month: 11,
-        baseScore: 69.36
-    },
-    {
-        id: 61,
-        year: 2018,
-        month: 12,
-        baseScore: 78.82
-    },
-    {
-        id: 62,
-        year: 2019,
-        month: 1,
-        baseScore: 71.02
-    },
-    {
-        id: 63,
-        year: 2019,
-        month: 2,
-        baseScore: 79.96
-    },
-    {
-        id: 64,
-        year: 2019,
-        month: 3,
-        baseScore: 57.79
-    },
-    {
-        id: 65,
-        year: 2019,
-        month: 4,
-        baseScore: 80.19
-    },
-    {
-        id: 66,
-        year: 2019,
-        month: 5,
-        baseScore: 76.69
-    },
-    {
-        id: 67,
-        year: 2019,
-        month: 6,
-        baseScore: 87.47
-    },
-    {
-        id: 68,
-        year: 2019,
-        month: 7,
-        baseScore: 56.49
-    },
-    {
-        id: 69,
-        year: 2019,
-        month: 8,
-        baseScore: 95.41,
-        hasDeath: true,
-    },
-    {
-        id: 70,
-        year: 2019,
-        month: 9,
-        baseScore: 45.67
-    },
-    {
-        id: 71,
-        year: 2019,
-        month: 10,
-        baseScore: 71.72
-    },
-    {
-        id: 72,
-        year: 2019,
-        month: 11,
-        baseScore: 79.05
-    },
-    {
-        id: 73,
-        year: 2019,
-        month: 12,
-        baseScore: 97.02
-    },
-    {
-        id: 74,
-        year: 2020,
-        month: 1,
-        baseScore: 74.73
-    },
-    {
-        id: 75,
-        year: 2020,
-        month: 2,
-        baseScore: 62.49
-    },
-    {
-        id: 76,
-        year: 2020,
-        month: 3,
-        baseScore: 85.81
-    },
-    {
-        id: 77,
-        year: 2020,
-        month: 4,
-        baseScore: 43.09
-    },
-    {
-        id: 78,
-        year: 2020,
-        month: 5,
-        baseScore: 69.86
-    },
-    {
-        id: 79,
-        year: 2020,
-        month: 6,
-        baseScore: 88.51
-    },
-    {
-        id: 80,
-        year: 2020,
-        month: 7,
-        baseScore: 89.76
-    },
-    {
-        id: 81,
-        year: 2020,
-        month: 8,
-        baseScore: 90.88
-    },
-    {
-        id: 82,
-        year: 2020,
-        month: 9,
-        baseScore: 78.91
-    },
-    {
-        id: 83,
-        year: 2020,
-        month: 10,
-        baseScore: 79.19
-    },
-    {
-        id: 84,
-        year: 2020,
-        month: 11,
-        baseScore: 86.34
-    },
-    {
-        id: 85,
-        year: 2020,
-        month: 12,
-        baseScore: 73.22
-    },
-    {
-        id: 86,
-        year: 2021,
-        month: 1,
-        baseScore: 86.57
-    },
-    {
-        id: 87,
-        year: 2021,
-        month: 2,
-        baseScore: 92.32
-    },
-    {
-        id: 88,
-        year: 2021,
-        month: 3,
-        baseScore: 88.85
-    },
-    {
-        id: 89,
-        year: 2021,
-        month: 4,
-        baseScore: 75.29
-    },
-    {
-        id: 90,
-        year: 2021,
-        month: 5,
-        baseScore: 94.91
-    },
-    {
-        id: 91,
-        year: 2021,
-        month: 6,
-        baseScore: 90.50
-    },
-    {
-        id: 92,
-        year: 2021,
-        month: 7,
-        baseScore: 78.89
-    },
-    {
-        id: 93,
-        year: 2021,
-        month: 8,
-        baseScore: 83.02
-    },
-    {
-        id: 94,
-        year: 2021,
-        month: 9,
-        baseScore: 87.64
-    },
-    {
-        id: 95,
-        year: 2021,
-        month: 10,
-        baseScore: 72.91
-    },
-    {
-        id: 96,
-        year: 2021,
-        month: 11,
-        baseScore: 81.12
-    },
-    {
-        id: 97,
-        year: 2021,
-        month: 12,
-        baseScore: 71.06
-    },
-    {
-        id: 98,
-        year: 2022,
-        month: 1,
-        baseScore: 54.8
-    },
-    {
-        id: 99,
-        year: 2022,
-        month: 2,
-        baseScore: 31.26,
-        hasDeath: true,
-    },
-    {
-        id: 100,
-        year: 2022,
-        month: 3,
-        baseScore: 66.28
-    },
-    {
-        id: 101,
-        year: 2022,
-        month: 4,
-        baseScore: 90.77
-    },
-    {
-        id: 102,
-        year: 2022,
-        month: 5,
-        baseScore: 83.55
-    },
-    {
-        id: 103,
-        year: 2022,
-        month: 6,
-        baseScore: 64.36
-    },
-    {
-        id: 104,
-        year: 2022,
-        month: 7,
-        baseScore: 79.49
-    },
-    {
-        id: 105,
-        year: 2022,
-        month: 8,
-        baseScore: 82.04
-    },
-    {
-        id: 106,
-        year: 2022,
-        month: 9,
-        baseScore: 56.66
-    },
-    {
-        id: 107,
-        year: 2022,
-        month: 10,
-        baseScore: 67.44
-    },
-    {
-        id: 108,
-        year: 2022,
-        month: 11,
-        baseScore: 70.9
-    },
-    {
-        id: 109,
-        year: 2022,
-        month: 12,
-        baseScore: 70.77
-    },
-    {
-        id: 110,
-        year: 2023,
-        month: 1,
-        baseScore: 94.48
-    },
-    {
-        id: 111,
-        year: 2023,
-        month: 2,
-        baseScore: 81.16
-    },
-    {
-        id: 112,
-        year: 2023,
-        month: 3,
-        baseScore: 66.63
-    },
-    {
-        id: 113,
-        year: 2023,
-        month: 4,
-        baseScore: 92.32
-    },
-    {
-        id: 114,
-        year: 2023,
-        month: 5,
-        baseScore: 98.13
-    },
-    {
-        id: 115,
-        year: 2023,
-        month: 6,
-        baseScore: 86.16
-    },
-    {
-        id: 116,
-        year: 2023,
-        month: 7,
-        baseScore: 80.62
-    },
-    {
-        id: 117,
-        year: 2023,
-        month: 8,
-        baseScore: 30.10
-    },
-    {
-        id: 118,
-        year: 2023,
-        month: 9,
-        baseScore: 96.19
-    },
-    {
-        id: 119,
-        year: 2023,
-        month: 10,
-        baseScore: 84.24
-    },
-    {
-        id: 120,
-        year: 2023,
-        month: 11,
-        baseScore: 79.06
-    },
-
+    }
 ];
 
 
@@ -994,3 +328,976 @@ export const diaryMonthsTexts = [
         song_en: `https://www.youtube.com/embed/fNEABJ5HuJc?si=3o-DE_Dnz8xHgY8Z`,
     },
 ]
+
+
+
+export const diaryDaysMocks = [
+    {
+        "id": 31,
+        "day": 31,
+        "month": 12,
+        "year": 2016,
+        "score": 11,
+        "importance": 5,
+        "inconsistency_min": 3,
+        "inconsistency_max": 1,
+        "atmosphere": 3,
+        "createdAt": "2023-12-13T14:31:05.000Z",
+        "updatedAt": "2023-12-13T14:31:05.000Z"
+    },
+    {
+        "id": 30,
+        "day": 30,
+        "month": 12,
+        "year": 2016,
+        "score": 7.7,
+        "importance": 1,
+        "inconsistency_min": 2,
+        "inconsistency_max": 1,
+        "atmosphere": -1,
+        "createdAt": "2023-12-13T14:30:28.000Z",
+        "updatedAt": "2023-12-13T14:30:28.000Z"
+    },
+    {
+        "id": 29,
+        "day": 29,
+        "month": 12,
+        "year": 2016,
+        "score": 18.2,
+        "importance": 18,
+        "inconsistency_min": 10,
+        "inconsistency_max": 1,
+        "atmosphere": 9,
+        "createdAt": "2023-12-13T14:29:08.000Z",
+        "updatedAt": "2023-12-13T14:29:08.000Z"
+    },
+    {
+        "id": 28,
+        "day": 28,
+        "month": 12,
+        "year": 2016,
+        "score": 6.2,
+        "importance": 6,
+        "inconsistency_min": 4.5,
+        "inconsistency_max": 4,
+        "atmosphere": -3,
+        "createdAt": "2023-12-13T14:27:55.000Z",
+        "updatedAt": "2023-12-13T14:27:55.000Z"
+    },
+    {
+        "id": 27,
+        "day": 27,
+        "month": 12,
+        "year": 2016,
+        "score": 8.5,
+        "importance": 1,
+        "inconsistency_min": 2,
+        "inconsistency_max": 2,
+        "atmosphere": 1,
+        "createdAt": "2023-12-13T14:27:03.000Z",
+        "updatedAt": "2023-12-13T14:27:03.000Z"
+    },
+    {
+        "id": 26,
+        "day": 26,
+        "month": 12,
+        "year": 2016,
+        "score": 5.2,
+        "importance": 2,
+        "inconsistency_min": 3,
+        "inconsistency_max": 2.5,
+        "atmosphere": -4,
+        "createdAt": "2023-12-13T14:26:32.000Z",
+        "updatedAt": "2023-12-13T14:26:32.000Z"
+    },
+    {
+        "id": 25,
+        "day": 25,
+        "month": 12,
+        "year": 2016,
+        "score": 5.9,
+        "importance": 1,
+        "inconsistency_min": 2,
+        "inconsistency_max": 2,
+        "atmosphere": -4,
+        "createdAt": "2023-12-13T14:25:11.000Z",
+        "updatedAt": "2023-12-13T14:25:11.000Z"
+    },
+    {
+        "id": 24,
+        "day": 24,
+        "month": 12,
+        "year": 2016,
+        "score": 6.5,
+        "importance": 3,
+        "inconsistency_min": 2,
+        "inconsistency_max": 2,
+        "atmosphere": -3,
+        "createdAt": "2023-12-13T14:23:09.000Z",
+        "updatedAt": "2023-12-13T14:23:09.000Z"
+    },
+    {
+        "id": 23,
+        "day": 23,
+        "month": 12,
+        "year": 2016,
+        "score": 6.4,
+        "importance": 2,
+        "inconsistency_min": 2,
+        "inconsistency_max": 2,
+        "atmosphere": -2,
+        "createdAt": "2023-12-13T14:22:25.000Z",
+        "updatedAt": "2023-12-13T14:22:25.000Z"
+    },
+    {
+        "id": 22,
+        "day": 22,
+        "month": 12,
+        "year": 2016,
+        "score": 5.7,
+        "importance": 2,
+        "inconsistency_min": 1.5,
+        "inconsistency_max": 2,
+        "atmosphere": -3,
+        "createdAt": "2023-12-13T14:21:15.000Z",
+        "updatedAt": "2023-12-13T14:21:15.000Z"
+    },
+    {
+        "id": 21,
+        "day": 21,
+        "month": 12,
+        "year": 2016,
+        "score": 8.1,
+        "importance": 5,
+        "inconsistency_min": 4,
+        "inconsistency_max": 3,
+        "atmosphere": 0,
+        "createdAt": "2023-12-13T14:19:39.000Z",
+        "updatedAt": "2023-12-13T14:19:39.000Z"
+    },
+    {
+        "id": 20,
+        "day": 20,
+        "month": 12,
+        "year": 2016,
+        "score": 4.9,
+        "importance": 2,
+        "inconsistency_min": 1.5,
+        "inconsistency_max": 3,
+        "atmosphere": -5,
+        "createdAt": "2023-12-13T14:19:04.000Z",
+        "updatedAt": "2023-12-13T14:19:04.000Z"
+    },
+    {
+        "id": 19,
+        "day": 19,
+        "month": 12,
+        "year": 2016,
+        "score": 9.4,
+        "importance": 3,
+        "inconsistency_min": 5,
+        "inconsistency_max": 3,
+        "atmosphere": 3,
+        "createdAt": "2023-12-13T14:16:57.000Z",
+        "updatedAt": "2023-12-13T14:16:57.000Z"
+    },
+    {
+        "id": 18,
+        "day": 18,
+        "month": 12,
+        "year": 2016,
+        "score": 8.3,
+        "importance": 3,
+        "inconsistency_min": 1.5,
+        "inconsistency_max": 2,
+        "atmosphere": 2,
+        "createdAt": "2023-12-13T14:15:55.000Z",
+        "updatedAt": "2023-12-13T14:15:55.000Z"
+    },
+    {
+        "id": 17,
+        "day": 17,
+        "month": 12,
+        "year": 2016,
+        "score": 8.5,
+        "importance": 3,
+        "inconsistency_min": 2.5,
+        "inconsistency_max": 2,
+        "atmosphere": 2,
+        "createdAt": "2023-12-13T14:15:15.000Z",
+        "updatedAt": "2023-12-13T14:15:15.000Z"
+    },
+    {
+        "id": 16,
+        "day": 16,
+        "month": 12,
+        "year": 2016,
+        "score": 11,
+        "importance": 9,
+        "inconsistency_min": 4,
+        "inconsistency_max": 2,
+        "atmosphere": 5,
+        "createdAt": "2023-12-13T14:13:43.000Z",
+        "updatedAt": "2023-12-13T14:13:43.000Z"
+    },
+    {
+        "id": 15,
+        "day": 15,
+        "month": 12,
+        "year": 2016,
+        "score": 5.5,
+        "importance": 2,
+        "inconsistency_min": 3,
+        "inconsistency_max": 2,
+        "atmosphere": -4,
+        "createdAt": "2023-12-13T14:12:24.000Z",
+        "updatedAt": "2023-12-13T14:12:24.000Z"
+    },
+    {
+        "id": 14,
+        "day": 14,
+        "month": 12,
+        "year": 2016,
+        "score": 6.5,
+        "importance": 2,
+        "inconsistency_min": 2,
+        "inconsistency_max": 1.5,
+        "atmosphere": -2,
+        "createdAt": "2023-12-13T14:10:55.000Z",
+        "updatedAt": "2023-12-13T14:10:55.000Z"
+    },
+    {
+        "id": 13,
+        "day": 13,
+        "month": 12,
+        "year": 2016,
+        "score": 7,
+        "importance": 9,
+        "inconsistency_min": 5.5,
+        "inconsistency_max": 8,
+        "atmosphere": -2,
+        "createdAt": "2023-12-13T14:07:06.000Z",
+        "updatedAt": "2023-12-13T14:07:06.000Z"
+    },
+    {
+        "id": 12,
+        "day": 12,
+        "month": 12,
+        "year": 2016,
+        "score": 8,
+        "importance": 4,
+        "inconsistency_min": 3,
+        "inconsistency_max": 3,
+        "atmosphere": 0,
+        "createdAt": "2023-12-13T14:05:48.000Z",
+        "updatedAt": "2023-12-13T14:05:48.000Z"
+    },
+    {
+        "id": 11,
+        "day": 11,
+        "month": 12,
+        "year": 2016,
+        "score": 6,
+        "importance": 2,
+        "inconsistency_min": 3,
+        "inconsistency_max": 3,
+        "atmosphere": -3,
+        "createdAt": "2023-12-13T14:05:18.000Z",
+        "updatedAt": "2023-12-13T14:05:18.000Z"
+    },
+    {
+        "id": 10,
+        "day": 10,
+        "month": 12,
+        "year": 2016,
+        "score": 3.4,
+        "importance": 2,
+        "inconsistency_min": 1.5,
+        "inconsistency_max": 2,
+        "atmosphere": -4,
+        "createdAt": "2023-12-13T14:04:29.000Z",
+        "updatedAt": "2023-12-13T14:04:29.000Z"
+    },
+    {
+        "id": 9,
+        "day": 9,
+        "month": 12,
+        "year": 2016,
+        "score": 3.1,
+        "importance": 2,
+        "inconsistency_min": 1,
+        "inconsistency_max": 2,
+        "atmosphere": -4,
+        "createdAt": "2023-12-13T14:03:13.000Z",
+        "updatedAt": "2023-12-13T14:03:13.000Z"
+    },
+    {
+        "id": 8,
+        "day": 8,
+        "month": 12,
+        "year": 2016,
+        "score": 2.8,
+        "importance": 4,
+        "inconsistency_min": 1,
+        "inconsistency_max": 3,
+        "atmosphere": -5,
+        "createdAt": "2023-12-13T14:01:51.000Z",
+        "updatedAt": "2023-12-13T14:01:51.000Z"
+    },
+    {
+        "id": 7,
+        "day": 7,
+        "month": 12,
+        "year": 2016,
+        "score": 8.2,
+        "importance": 3,
+        "inconsistency_min": 3,
+        "inconsistency_max": 2,
+        "atmosphere": 1,
+        "createdAt": "2023-12-13T14:00:35.000Z",
+        "updatedAt": "2023-12-13T14:00:35.000Z"
+    },
+    {
+        "id": 6,
+        "day": 6,
+        "month": 12,
+        "year": 2016,
+        "score": 11.3,
+        "importance": 11,
+        "inconsistency_min": 3,
+        "inconsistency_max": 4,
+        "atmosphere": 4,
+        "createdAt": "2023-12-12T22:49:28.000Z",
+        "updatedAt": "2023-12-12T22:49:28.000Z"
+    },
+    {
+        "id": 5,
+        "day": 5,
+        "month": 12,
+        "year": 2016,
+        "score": 7.9,
+        "importance": 1,
+        "inconsistency_min": 2,
+        "inconsistency_max": 2.5,
+        "atmosphere": 0,
+        "createdAt": "2023-12-12T22:48:32.000Z",
+        "updatedAt": "2023-12-12T22:48:32.000Z"
+    },
+    {
+        "id": 4,
+        "day": 4,
+        "month": 12,
+        "year": 2016,
+        "score": 8,
+        "importance": 1,
+        "inconsistency_min": 1,
+        "inconsistency_max": 1,
+        "atmosphere": 0,
+        "createdAt": "2023-12-12T22:47:36.000Z",
+        "updatedAt": "2023-12-12T22:47:36.000Z"
+    },
+    {
+        "id": 3,
+        "day": 3,
+        "month": 12,
+        "year": 2016,
+        "score": 7.4,
+        "importance": 3,
+        "inconsistency_min": 3,
+        "inconsistency_max": 4,
+        "atmosphere": -2,
+        "createdAt": "2023-12-12T22:47:21.000Z",
+        "updatedAt": "2023-12-12T22:47:21.000Z"
+    },
+    {
+        "id": 2,
+        "day": 2,
+        "month": 12,
+        "year": 2016,
+        "score": 8.7,
+        "importance": 1,
+        "inconsistency_min": 1.5,
+        "inconsistency_max": 1,
+        "atmosphere": 3,
+        "createdAt": "2023-12-12T22:46:49.000Z",
+        "updatedAt": "2023-12-12T22:46:49.000Z"
+    },
+    {
+        "id": 1,
+        "day": 1,
+        "month": 12,
+        "year": 2016,
+        "score": 18.5,
+        "importance": 20,
+        "inconsistency_min": 4,
+        "inconsistency_max": 2,
+        "atmosphere": 18,
+        "createdAt": "2023-12-12T22:45:30.000Z",
+        "updatedAt": "2023-12-12T22:45:30.000Z"
+    }
+];
+
+export const diaryDayTextsMocks = [
+    {
+        "id": 33,
+        "day": 31,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well, the last day of 2016 has passed already. I had a pretty good New Year's Eve, first I listened to music, made a meme card for 2016. I wished everyone a happy new year, and I wished crush a happy new year too. She still communicates now without much desire, but it seems to me that already much better than before. Almost everyone has responded to me, except one whore who really likes to ignore me without reading my messages. I've already done 2 conversations in the evening with cool activity, and I drank a blazer before the new year. That's how I met the new year 2017)",
+        "createdAt": "2023-12-13T14:31:05.000Z",
+        "updatedAt": "2023-12-13T14:31:05.000Z"
+    },
+    {
+        "id": 32,
+        "day": 30,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Boring day today, I woke up in the afternoon and went to the store to get drinks for the new year. I also got a blazer for New Year's Eve today. And so the day is not very special, sat at the computer, in the evening with some bullies in the comments on the post, where the memes fought - Mashed Potato vs Wild Bob. Aaa I was too scared to write crush after yesterday, I'll write on December 31. AAH, BUT FATHER FROST IS DRUNK TODAY)))00",
+        "createdAt": "2023-12-13T14:30:28.000Z",
+        "updatedAt": "2023-12-13T14:30:28.000Z"
+    },
+    {
+        "id": 31,
+        "day": 29,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I had a bad morning, but this time it was because of last night's booze from computer science. I think I was still a little drunk in the first classes, but it went away with time. The first lesson was math, but I was too lazy to do it all, I did 12 tasks, the rest I could not do. Then I told Stepan and Misha about the girl I lost in Cyprus on June 29, exactly six months had passed, showed those correspondence. At first there were very few people there, but by the 2nd lesson Sanya, Boris and Kirill had already come, and the whole day they were trying to make fun of me. Sanek made jokes, pretended to visit a page of my crush, and had fun in general. But before literature, they really went to my crush's page, and Boris threw her a request, but then immediately canceled it. Although everyone except Sanja wasn't quite sure what they were looking for yet. I incidentally have not seen her anywhere in the morning( But she went online recently, so mb she was at school, probably at the dance. After 5th lesson I decided to look downstairs. I went downstairs.\nSaw crush with a friend at the end of the hallway, but then they went down the hall and I never saw them again( I decided to look for her. + Also today was the 29th of the month. A little later I saw her downstairs, near the physics room. And then…\nI decided to talk to her there, first I asked her why she was so not really interested there. She said that she rarely answered now, because she was having some problems with her boyfriend there. Apologized for ignoring me there sometimes. I also asked her how was the disco for her? She said that well, but they left because many of them came drunk, and she and her friends were adequate, ie, did not drink, and also that the music was not very good (my mix was not able to connect there, it did not sound good, and all the music by the DJ from 11B class who put, but he is a very good DJ, he said that he still works in clubs). and it's good, it seems to me that they are normal, so I said that it's good, told her about the music as well. And soon I said: \"I need to tell you something.\" She kind of said, okay, or something like that, for some reason I always forget a lot of things at times like that. Then I said it would be hard for me to talk about it. And then I said something like, \"Well I understand that you have a boyfriend, but I want to tell you that I like you, and I was also worried when you didn't answer me sometimes. I wish you all the best with a boyfriend, well I'll put up with anything myself, that's okay.\" She kind of smiled at first, then there was such emotion. Both me and her. That we laughed a little bit, but it's really fucking hard to explain, it's really awkward. She then said that I would find a nice girl, and she also said. As if hinted at her classmate, which then like December 13, if I'm not mistaken wanted to get acquainted with me through this friend. Well crush said her name. And then she said something like, well, now communication will be very different, or will be different. I did not really understand, maybe she would write me better. And then I said, well, how do you feel about what I said. Only I almost forgot what she answered, like nothing at all, and just smiled, or maybe answered something. Then I said, like, well, goodbye, until 2017. And then I hugged her. And she hugged me. By the way, it was about 10-20 seconds somewhere, if not even longer, and hugged me very tight. Such a great feeling was just. And then I went to my class for tea, and I saw my friend, and I yelled, \"Bro, Bro, Bro,\" and I was just in a good fucking mood. And then I told everyone that I told the girl I liked that I liked her. And that's not all. I also told my homeroom teacher. And she said, well, I think I know who you're talking about. I said, who? And my homeroom teacher said Sonya. I was walking with my friends at the time. And we were all shocked, how did she find out? Then the whole class found out from those who were there today, already at the tea party. We discussed, we laughed, I laughed my ass off, I hadn't laughed like that in a long time, and I was in a great mood. Once, during a tea party, my homeroom teacher told me that Denis was good, he only likes nice and smart girls. She was just discussing the 11-B class, who were drunk at the disco. Well, the class teacher said that my crush is smart, good, and she also went to the theater with my class and with someone else when I was in Turkey and for the November vacations and I was not there then and there (And then I found out how the class teacher knew what I liked. She said that she was approached by my crush, and crush said that I liked her, well that's what the class teacher said. I feel like 90% chance now when a friend asked her from me. And for some reason my homeroom teacher said Sonia doesn't have a boyfriend. I said she does. Most likely she just does not know it, because I think I also heard her saying that someone blocked her, her friends asked her if she had a boyfriend. So I think she really has a boyfriend after all - 96% Well then we started to go away slowly, the tea party was ending, I said goodbye to everyone until 2017, wished my classmates and girl classmates to have a good year. Soon I returned home, and there was nothing to do and freedom, and nothing to worry about yet)",
+        "createdAt": "2023-12-13T14:29:08.000Z",
+        "updatedAt": "2023-12-13T14:29:08.000Z"
+    },
+    {
+        "id": 30,
+        "day": 28,
+        "month": 12,
+        "year": 2016,
+        "fullText": "It was bad again this morning. Today crush came to school not only for the dance, but I did not communicate with her. In social studies there was a very difficult self-study, but I managed to write it on A, in biology I also wrote it correctly. I spent the whole day with my flash drive, looking for Moses, to discuss about the music on the CD. But he only came to the disco. The lessons were over, I went home, left my schoolbag, went back to the disco. Before that I watched a play for a bit, then we discussed music with Moses and my friends, then I decided to see who came to the disco and suddenly I saw crush, it was very unexpected. But she was talking to me again with no interest whatsoever. And then the disco started and I was waiting for my mix and I thought I'd dance with crush and tell her about it. But when the mix was on, it was like shit, I realized that it's hard to dance to it and decided without the mix, ie Moses himself further songs spinning. The songs were good, like 2014, I liked them then, but not so much now, but you can dance to them. Mood dropped a little bit after that, and later crush left, I missed my chance. By 7, the disco was over and we went our separate ways. But I had a good time with the girls from 11th-B class and I realized that they're really nice too, even though they don't lead a very healthy life. Me and Sanya, Borya, Kirill and one girl from the 10th grade, I think, went out of school a little different way, so I also walked around a little bit more. I was already on the bus alone with Sanya and for some reason I told him that I liked someone from school. Sanya just really asked me to tell who exactly, to show him a photo, he gave his word as a boy and swore that he would never tell anyone. So I showed him and he said that he knew her a little bit, that she was in a theater with Borya. Well, shit, I hope that it will not be worse, Sanya will not spill the beans. I got home. AND THEN, I DIDN'T EVEN PASSED TO THE OLYMPIAD IN COMPUTER SCIENCE. I WAS 10 FUCKING POINTS LESS, ONLY 10/500!!!! That's when I realized for sure that the truth was now as if everything was rigged against me. It all just pissed me off, but at least I found out that my history problems were solved and I got all A's for the semester. And then I had some champagne and told Veronica what had happened to me in the first place. But I think she's jealous and a little offended right now. It's been a fucked up day. Tomorrow I will confess to crush.",
+        "createdAt": "2023-12-13T14:27:55.000Z",
+        "updatedAt": "2023-12-13T14:27:55.000Z"
+    },
+    {
+        "id": 29,
+        "day": 27,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well school was pretty good at the time, didn't suck as much as usual in the morning because I slept okay. I haven't seen or talked to Crush, I try not to think about her at all. I got preliminary scores on the preliminary USE, in Computer Science - 72, in Russian - 73, in English - 74, in Math. Profile - 78, and in physics - 58. I still need to get better at physics. I had better luck in physics, but on chemistry I got an A on that test. Also I helped my classmate with chemistry, but then the chemist noticed it (In addition to Math, I felt good, but from my C-class I was the only one there. I didn't write at all that day, but I had a good time with Veronica. At home I have already decorated the Christmas tree, had a good work with the tutor, thought a little about the disco there, nostalgized also for January 2016, and then went to bed. Indeed, Veronica is much more interested in me than my crush(((",
+        "createdAt": "2023-12-13T14:27:03.000Z",
+        "updatedAt": "2023-12-13T14:27:03.000Z"
+    },
+    {
+        "id": 28,
+        "day": 26,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Of course, I knew that if I went to bed that late, I would be sick in the morning. I did, but the morning started out pretty well. But then things started to go downhill, for example, in chemistry I had a very difficult test. After chemistry I chatted with crush downstairs, except for hi and how are you, I did not have time to say anything, she was leaving, and in general, somehow badly communicated. Her hands were cold, just like her attitude towards me. In PE I had no luck at all for some reason, I was always screwing up and missing. Then I went home in a crappy mood. I felt bad, it didn't even seem like it anymore, and I was sure that crush didn't give a shit about me at all. I remembered Veronica, the way I had talked to her before. There had actually been a lot of fighting, but there had also been a lot of good. Out of despair I had written to Veronica on the bus, and it had been eight months since I had any contact with her. I didn't know what I was doing, but I had also texted crush before that. At home, it turned out that I got an A in chemistry today for something, but I don't think it was for a test, because it was very hard. Soon I did my homework, and had a chat. And I realized. Even now, Veronica and I were communicating MUCH better than I was with my crush. At least Veronica was curious about me, she even asked to tell me more about what was new and answered me perfectly. At first seemed to be fine with my crush, but then again I felt as if she didn't care about me, she only talked about herself. And now she just ignores me, even after reading it. Veronica didn't ignore me at all today. I don't even think it makes sense to keep talking to her like that, she wouldn't give a shit about me anyway and besides she already has a boyfriend, it's better to leave her alone. I can hang out with Veronica as friends, and then maybe in 2017 I will meet a girl I like even more and she will care about me. Or maybe something unexpected will happen? Who knows. About 28, I don't think she will come to the disco, but if she does, I will confess my feelings to her, because I'm sick of it. And then probably just score. If she doesn't come to the disco, I'll just have fun there, and then maybe I'll talk to crush on the 29th or 30th.",
+        "createdAt": "2023-12-13T14:26:32.000Z",
+        "updatedAt": "2023-12-13T14:26:32.000Z"
+    },
+    {
+        "id": 27,
+        "day": 25,
+        "month": 12,
+        "year": 2016,
+        "fullText": "It was a very boring day, nothing much happened, I studied chemistry and history. I didn't write Crush that day, and didn't really communicate with anyone at all. On the cat Boris got worse, the activity is not so, banning, faggots, on some pubs(( At night I was already drawing the last window for the game, went to 2:40 somewhere.",
+        "createdAt": "2023-12-13T14:25:11.000Z",
+        "updatedAt": "2023-12-13T14:25:11.000Z"
+    },
+    {
+        "id": 26,
+        "day": 24,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Woke up at about 11, it was a pretty boring day. Crush ignored me for a long time, but then she responded, really didn't give a fuck. It seems to me that she has no desire to communicate with me and does not care at all(( By evening, the current is more less, but still so-so. But today I met some new good people who supported me. Through the cat Boris, all the same, it is good that I created it, otherwise it would have been much worse( He already has 900 friends somewhere, the activity today is a little worse, + more banned from some groups (here's the bastards, and I wrote a simple message, without any requests, and type on the subject to be). Made another mix for February 2017 and drew 2 more windows for the game (left one more, then write for all this code and will be 0.7 version). Aa also need to make dialogues.",
+        "createdAt": "2023-12-13T14:23:09.000Z",
+        "updatedAt": "2023-12-13T14:23:09.000Z"
+    },
+    {
+        "id": 25,
+        "day": 23,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Didn't feel great this morning, my crush only goes to speeches. At society there was independent work, then there was algebra, English, on computer science we did a table, then in Russian there was a class hour, we discussed school problems, we can change the teachers of history and math from next year. Solved the problem with history, and in biology it turned out that I had nothing to write, was an additional lesson on computer science at 15:30, before that I had never seen my crush anywhere in school, my classmate vomited, until 15:30 sat in the classroom a classmate, talked to a friend, a classmate, talked about the game/video. On cat boris still not bad activity, before computer science I wrote my crush, also the dude who is preparing us for the info had a birthday today, he turned 18. My crush ignored, but responded after about 3 hours, then ignored again for several hours, even after reading the message. I was really sleepy so I decided to go to bed at 19 for about 2 hours. At 21 the alarm woke me up, but I was still passed out, looked in VK crush wrote me back, others wrote too, and then I finally went to bed",
+        "createdAt": "2023-12-13T14:22:25.000Z",
+        "updatedAt": "2023-12-13T14:22:25.000Z"
+    },
+    {
+        "id": 24,
+        "day": 22,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Actually kind of a shitty day today. Really wanted to sleep all day and it was kind of bad. Went to school today, but to dance. Talked a little with my crush girlfriends before, it was not so much. And I think crush gives a fuck about me at all. But after 5 lessons I saw my crush and talked with her in her locker room a little, at least not bad, she even believed in me, that I'll write a normal test in physics (which was just the 6th lesson). My crush is feeling better, which is good, almost recovered. On extra computer science I was already passing out, I also wrote my crush somewhere around the same time. But she ignored for about 3 hours, then we talked not so much(((( And also all day studying social studies and want to sleep, but closer to 0 o'clock all was more or less good, and on the Cat boris cool such activity.",
+        "createdAt": "2023-12-13T14:21:15.000Z",
+        "updatedAt": "2023-12-13T14:21:15.000Z"
+    },
+    {
+        "id": 23,
+        "day": 21,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Felt bad again this morning, was a few minutes late for my first class. Physics practice test was rescheduled for Thursday, and after about 2 or 3 classes, I met my crush friends, asked them how she was doing, they said they would pass on what I asked, and they also said she came to school today for a performance only. Then we had biology, and then individual work, on which I knew almost nothing, because I had not been to biology for a long time (After biology there was algebra, on algebra we laughed with Sanya and Vadim). Then at the next break I met Crush, talked a little with her, we did not communicate much (more because of her well-being), and in general she felt very bad, I felt sorry for her. I could not hug her, because I understand that I do not want to get sick too, because I can miss a lot of things - may be I will go to the movies with my best friend at the weekend (if she recovered (she was also sick, but a week ago the flu(((( ) 28 will be a disco, and the night of 31 to 1 I would not want to miss everything and not meet the new year cool, and my crush herself probably knew it. We did not cuddle this time, then there was a sixth lesson. After that I said goodbye to everyone, even those with whom I usually do not communicate (from 11 B). Well, on the street I wrote to crush somewhere, then it was boring as that, I think crush was not really wanted to communicate. But she said that she had problems with her friend and boyfriend seemed to have mended, it's good. Already in the evening I had to do a presentation on literature, but I decided to go to my fake. And then I managed to make the activity became just huge, and gained >200 friends in just 1 day. It's cool, the mood was good, but my crush was ignoring a little bit( Well, then something. It might have been already 22, but my crush's friend that I see at school with her often texted me. He abruptly asked something like \"I heard a rumor that you like 'my crush's name', is that true?\" I didn't know what to answer and I didn't want to get dirty, so I told him I was a busy type, got sidetracked and was now sitting with a fake. I don't know what will happen tomorrow…",
+        "createdAt": "2023-12-13T14:19:39.000Z",
+        "updatedAt": "2023-12-13T14:19:39.000Z"
+    },
+    {
+        "id": 22,
+        "day": 20,
+        "month": 12,
+        "year": 2016,
+        "fullText": "It was bad again this morning. I don't know why that is, but I get really worried before recess there, what with my crush meeting. But she wasn't at school today(( I think her friends said she was only coming to the tryout, but it turned out she wasn't (probably, or maybe she was, but I didn't see). I wasn't really in the mood. After 2 lessons, we were writing the sample math test. I really hoped that I would see her before 2 lesson, but there was no sign of her anywhere. I wanted to talk to her, to support her, but she just was not at school(( On the test was very difficult tasks, I don't know how I wrote it, because I am dumb and I am not good at math, as the results of yesterday's Olympiad showed me. After I wrote a test exam, I waited for about half an hour, looking and hoping to see my crush, but when a lot of time had passed, I resigned, and went home without a mood. Some other girls were talking to me today, they knew my name, although I didn't even talk to them at all (from 8th-9th grade, I think). And some of the 11 girls in parallel said that I had a good haircut. Well, since I didn't see the crush, I went home all sad (I texted her right away on the street. Today she was ignoring me for a long time again, then she wrote that she got sick and had even worse problems. I feel sorry for her(( After talking to her yesterday at school I think I like her much more. Or maybe not only………. At home we did not communicate much at first, she ignored a lot of messages and did not ask about me, by the evening it was just a little bit better. Before the tutor I did my homework (history, Russian). With the tutor we did the lessons, at first I was in the normal mood, then I went to the lesson, I saw that she ignored me, my mood dropped a little, even the tutor said that I was having mood swings. Just like Veronica. The cat Boris today reached 200 friends, but on some groups banned for a week(( And the most offensive, where I wrote in general, very indirectly, and they immediately put on the block(( at FLETCH. By night the situation seems to be better, I want my crush recovered and all was well with her.",
+        "createdAt": "2023-12-13T14:19:04.000Z",
+        "updatedAt": "2023-12-13T14:19:04.000Z"
+    },
+    {
+        "id": 21,
+        "day": 19,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I felt sick again this morning for some reason, got to school. (Disclamer: there will be a lot of profanity and bombast next) The first class was history, but it's a good thing they didn't ask me. Almost everyone paid attention to my haircut, some even yelled because they didn't expect me to have one. After class 1-2 somewhere, I chatted with my crush for a bit at school, crush's friend said the haircut looked good on me. Next was algebra/geometry, nothing special except that I yelled when Vadim called the teacher \"Tatiana Karlsson (On-The-Roof).\" We all laughed from that one. After that there were more lessons, there was literature, chemistry, PE. Just before P.E. I talked to my crush a little bit more. Yeah, she smokes hookah, I told her it's better not to, she accepted it, so she's good. She got out of class and I said goodbye and hugged her and she even hugged me. Oh God, I have not experienced this feeling for a long time, but it is cool. After gym class, I learned something else. Namely the fact that some dudes from my parallel A class play my game, I felt uncomfortable that my peers play my game which I made a year ago :D Everything was good, until some time. First of all, at school my crush is much better at communicating with me than online (I think so). I realized that her boyfriend ignores her and she's not in a good mood because of it. Man, even the problems are very similar, and my crush is awesome. In VK she didn't talk to me again today for some reason and she wasn't interested in me at all. But she said that she was not in the mood, and she ignored me a lot today. But man, that's not really the main problem today. IT'S THAT I ONLY GOT A 4 ON MY MATH TEST, 4 FUCKING POINTS. Fuck, I'm degrading, that's it. Every year the results are getting worse and worse, probably soon I won't know 2+2. And, moreover, 4 points only for one task, and more precisely for the one in which I was sure that it was not at all correct, because I wrote it randomly! And for those assignments where I was sure there were NO POINTS at all!!!! 0 FUCKING POINTS, BITCH, I FUCKING TRIED, I COULD HAVE AT LEAST PUT 1, AND I DO NOT UNDERSTAND WHY THE FUCK I GOT 0 POINTS EVEN FOR THE 3RD TASK. FUCK, I'M SO FUCKING STUPID, I'M SO FUCKING BOMBED. I SHOULDN'T HAVE TAKEN IT IN THE FIRST PLACE, BUT LUCKILY THIS IS THE LAST YEAR, AND THE COMPUTER SCIENTIST FROM MY DREAM WAS RIGHT ABOUT THEM BEING DUMB, BUT I MEAN, THAT'S HOW I AM. Alright, I hope december 20th will be a good day too, but without any problems, like ignoring from my crush, any shit with my game, olympics, studies, friends and other things that spoil my mood. Oh, yeah, there's a math test tomorrow. Fuck, since I'm so stupid, I'll get a 4 out of 100 on it. Ahh, of the good things today: I created a new fake, and there's already normal activity, heh, cat boris and his energy)",
+        "createdAt": "2023-12-13T14:16:57.000Z",
+        "updatedAt": "2023-12-13T14:16:57.000Z"
+    },
+    {
+        "id": 20,
+        "day": 18,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I went to bed at 5am this morning and was recording a video about my game. Woke up at about 2, I was feeling sick, and I thought what I wrote to my crush at night was unnecessary. When I checked VK, I saw that she hadn't even read it. I texted her and chatted with her a little bit, I realized that she's not that nice really, she has bad habits, although I still learned a lot of things about her yesterday that aren't great, but I don't think there's anything wrong with that. I had a lot of lessons again, literature, history. The day seemed to be ordinary, but I got confidence from somewhere. Now in the evening my crush is ignoring me hard, I think tomorrow again (oops, it's almost 19 today) I'll talk to her, and she will somehow get rid of it. But for some reason I'm already less worried about it, it seems that I do not like her so much (I also watched a video last night about relationships, I realized that you should not be shy to compliment her. And finally finished the quests for the game, and also made a video of me doing a review on it.",
+        "createdAt": "2023-12-13T14:15:55.000Z",
+        "updatedAt": "2023-12-13T14:15:55.000Z"
+    },
+    {
+        "id": 19,
+        "day": 17,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I woke up early, wanted to sleep very much. Then I went to the hair salon and got my hair done, and then to KFC. I think I saw a dude I knew from my school there. Then I went back home, talked to my crush for a while. I think the communication is going better now, but it's not so good anyway, she is not interested in me (I spent the whole day on reading, chemistry, Russian, lots of lessons). Also I looked at her saves, they are a little bit strange. And then I found a lot of pictures of Veronica Zhilina, found out about her friends, they are not so much jocks, except two. And in fact it turns out that the way Veronica spends time and walks with her friends does not look as creepy as I imagined it to look. Maybe I feel the same way now with crush, and things are a lot easier really. Also redid the December 2016 mix, and it's almost December 18, I'll probably be decorating the Christmas tree and still chatting with my crush. I wonder how things will go from here. Maybe I can become her close friend and she will pay more attention to me? Also now I will try to finally finish the quests for the game.",
+        "createdAt": "2023-12-13T14:15:15.000Z",
+        "updatedAt": "2023-12-13T14:15:15.000Z"
+    },
+    {
+        "id": 18,
+        "day": 16,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I felt really bad this morning. I don't know why( And with my crush I thought there was a problem, I was in no mood at all. When I said hello to my crush this morning, she didn't even ask me how I was doing( So, I sat through 5 lessons. I had a test in physics. And then at physics class, the physicist fell asleep and started snoring, and we all yelled at him. When physics was over, in Russian we just had a class talk with the class teacher about the graduation party and the last bell. At 6th lesson, I sat with the class where my crush. And then… I decided to go up to her. Asked if I seemed too intrusive for her, to talk there. She laughed a little bit, and said no, she was just in trouble right now. So there you go. Everybody seems to be having problems right now, me, my friend, my friends, and even the chick I like. Maybe it's that time of the year. Well we talked a little bit, she even said that I was not to worry so much about the problems, and then I hugged her outside the locker room) My mood immediately improved, and I went to wait for my extra computer lab. While I was waiting, I was allowed to try to learn how to draw with a 3-D pen, I created my first \"masterpiece\" and then the lesson began. There was only me and my friend-my classmate Mihan, and there was nobody from A class (Well, the dude was explaining to me all sorts of complicated and not so complicated things about vectors, binary search, functions, etc.). Then I went home, and there was almost nothing at home, well, I chatted to my crush).",
+        "createdAt": "2023-12-13T14:13:43.000Z",
+        "updatedAt": "2023-12-13T14:13:43.000Z"
+    },
+    {
+        "id": 17,
+        "day": 15,
+        "month": 12,
+        "year": 2016,
+        "fullText": "That's it. After the chick I liked told me she had a boyfriend, I thought it couldn't get any worse just yet. But no, it ain't. Okay, the day started out pretty good in general, I made fun of my childhood photos with my friend, played some cards with my crush and her friends, added Phillip as a friend (that dude who is also friends with my crush). It wasn't really a bad day, but when I got home what I found out was fucked up. THE FGL FOR FLASH GAMES WAS SHUT THE FUCK DOWN!!!! I MEAN I ACTUALLY HAVE A MUCH SMALLER CHANCE OF SELLING A GAME NOW AND I'VE WASTED 11 MONTHS OF WORK!!!! I DON'T KNOW NOW AT ALL!!!! But still, good thing I found, there's a little forum thread for flash games, maybe I'll find another sponsor or get in touch with an old one. Also, my crush has some friends who are 19-21. I don't think it'll work out and I need to look for a younger girl.",
+        "createdAt": "2023-12-13T14:12:24.000Z",
+        "updatedAt": "2023-12-13T14:12:24.000Z"
+    },
+    {
+        "id": 16,
+        "day": 14,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well, I didn't even go to school today, for it was bad. When I woke up, all I wanted to do was sleep, just to get away from reality, not to think about what was going on. But still I had to wake up, I was worried for a long time about what happened yesterday, and I was in no mood at all. I even had a hard time learning the verse. I had a little chat with my crush. At first I felt like she didn't really want to communicate, but I'm trying to support her anyway. I sent her the songs I'm listening to now and she even liked them and heard one already. I feel like she's communicating with me better and ignoring me less. But I thought, friendship isn't out of the question. I could just be her very good friend, why not? And now I'm getting a little nostalgic and hilarious over my old photos (2006-2009).",
+        "createdAt": "2023-12-13T14:10:55.000Z",
+        "updatedAt": "2023-12-13T14:10:55.000Z"
+    },
+    {
+        "id": 15,
+        "day": 13,
+        "month": 12,
+        "year": 2016,
+        "fullText": "There are times when you think everything is great, everything is going just right, and you think nothing can ruin your day. When everything is great, you get lucky, but then all of a sudden, in just one minute, one message, everything just crumbles to hell and your mood becomes the exact opposite. When you find out something that can get you to the point where you not only feel bad, but absolutely don't care about what's going on around you. So that's what happened today(((( I woke up this morning, as usual, decided to get off a little early, but did not have time for the bus(( I had to wait a little, and soon arrived my bus to school. I sat down at the very end (I just like this place), and then a girl from my class sat down with me, asked me about my studies there, about me in general, I was listening to music at the time. It was unexpected, but I talked to her, and then, when it was already stopped, I went to school. The first lesson was algebra I think, so I studied there and went to the next lesson - Russian. Soon I saw the crush downstairs, but before that, just like yesterday, I said hello to Lena from 10A. I talked to my crush for a while, found out why she was ignoring there, it turned out that she just leaves her phone nearby when she is busy, and also sometimes writes that she is online, but she is not. But before that, I saw my friend from her own class kissing her!!! But I think it was just on the cheek and he's an alpha, so I think it was just friendly and no big deal. Besides I know he seems to have a girlfriend already (another one). Then we went to our lessons, my crush had PE and I had Russian. We ran out of Russian, and now I had PE. I chatted with her a little bit more (I don't really remember what about), then we went to classes again. The lessons flew by quickly, I got the 5 on P.E., English was not bad too, and then this friend called me somewhere before the physics. It has appeared, that with me one more girl from class of my crush wants to get acquainted, well I have got acquainted with her too, she appeared the humanities (though I knew it before), and also the excellent marks, as well as I. Then there was physics and physics major (or he called me before the major, I do not remember). Before math, I said goodbye to my crush normally, we talked about tutors, well, even very well. And I said \"I have a great tutor\" :D . In the math major I got tired of studying and all I could think about was my crush. Then I drove home, and it was almost 5 o'clock. And I thought: what a great day, and my tutor will also come, and even 13 today)) At about 16:30 I decided to write to her, and at about 17:10 she wrote back. So, I went on to ask: \"How's it going?\" She said \"Not so good, how are you?\" or something like that. I asked what happened, it was 5:13 p.m. sharp. I wanted to sleep, so I was lying down then. And then some bad thoughts came to me, \"What if she wrote that because of the boyfriend something,\" then I tried to drive them away from me. I don't know why I thought of this particular thing, but when I opened the messages, everything just abruptly snapped. And THE DAY TRANSFORMED, from an awesome day, it turned into a disappointment for me. My bad thoughts turned into reality! She texted, \"Boyfriend problems.\" I felt bad for some milliseconds, and then I got into some weird state of not just not being in the mood. When you no longer care about what's going on around you and you just can't believe what's going on. That's what happened to me, and the mood just disappeared without a trace. I wanted to get away from reality and sink into a dream, and as time went on, it started to weigh on me even more. Okay, so I wrote \"I'm sorry(\" and sank into despair. After a while she asked me \"What are you doing?\" Because of how I felt at the time, I ignored her for about 10 minutes, but still answered further, and in general somehow began to ignore myself. So it was an hour before the tutor, it was 18 or something. I did English, and met the tutor with no mood at all. By 18:50 I just wanted to die, because it seems to me that everything is too bad for me and always adjusts against me. But it turned out that I had a very \"cool tutor\" after all. He was able to support me, talk about it after class, listen to sad music. He told me that I should just listen to it now and not think about anything. I told him he was not only a great teacher but a very good person, he even cried a little and laughed. How the hell do I adore him. I listened to the music and resigned myself to a little writing to my crush. I'm not going to school tomorrow, because I feel bad, I'm not in the mood. And in general I really feel that everything around me is set up on purpose against me. All year I was unlucky often, it felt as if fate simply hates me and does everything on purpose to deprive me of happiness and plunge me into depression. If something good comes into my life, it is always followed a few days later by a bad thing that shuts out all that good stuff, so…",
+        "createdAt": "2023-12-13T14:07:06.000Z",
+        "updatedAt": "2023-12-13T14:07:06.000Z"
+    },
+    {
+        "id": 14,
+        "day": 12,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well today was kind of supposed to be the 5th bad day. I want to say that I felt bad again this morning, so I went to 2nd lesson. Then before the 3rd lesson I was worried and went to look for crush. First, I saw Lena from 10A, I said hello to her. And crush was following her, I said hello to crush too. But I forgot to ask why she sits online and ignores, but asked her not to ignore the type that she was not in the mood, and she also told me that I did not bore her. Although I don't know how true that is. Then there was math, and then I did a statgrad in English. I also chatted with crush and her friends a little more, but for some reason she doesn't act as nice with her friends as she does when I see her alone. They were talking about some very strange things at the table (I don't want to think about it, though I may not have understood anything), and at the end after gym class I said goodbye to them, but I was not able to ask her the main thing. It took me a long time to study physics at home (and I also tutored English). I wrote my crush at home, she didn't ignore it so much this time, but she didn't answer it so willingly, I think, I don't know (somehow without interest, but not really, but just without much desire). And now it's not 12, but 13, for about 2 hours she's been ignoring me. I'll have to ask her again. And I found a photo of those jocks from Cyprus and hilarious. And it is December 13 (sorry it is not March)) and more tutor)). I hope that the tutor day will show itself in all its glory and will not let me down)",
+        "createdAt": "2023-12-13T14:05:48.000Z",
+        "updatedAt": "2023-12-13T14:05:48.000Z"
+    },
+    {
+        "id": 13,
+        "day": 11,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Day 4. I was not in the mood again this morning, and I also have to go to the computer science Olympiad. I'm tired of these days, I hope that tomorrow will be the last. On the Olympiad I got 330/500 points, then I went to KFC and went home to do the second Olympiad. But to my surprise, it turned out to be exactly the same assignments as the municipal one. I eventually solved it, and got 410/500 points, and realized how I screwed up then at the municipal with the 4th task (I got 30 points there, and all 100/100 at home). And most likely what I did at home will not affect, because they will be looking at my results from the municipal. Shit. It's already December 12. I hope this will be the last day of my anguish and I'll get along with crush. I'm so sick of this… It's gonna be the fifth fucking day. But, I hope it will be inconsistent and then all is well. Because this December is already driving me crazy…",
+        "createdAt": "2023-12-13T14:05:18.000Z",
+        "updatedAt": "2023-12-13T14:05:18.000Z"
+    },
+    {
+        "id": 12,
+        "day": 10,
+        "month": 12,
+        "year": 2016,
+        "fullText": "For the third day now, I'm not in the mood. Crush ignores me, and after I asked her if she was bored with me, she stopped answering at all, and it's been 24 hours. I took a long time studying social studies. I had to drink 5/3 of a cup of beer to get away from my problems. Now the mood is better, I almost do not worry about it, although I talk to friends about it, but tomorrow it will be bad again(( And the mood will not be( And also tomorrow is the Olympiad in Informatics, even two",
+        "createdAt": "2023-12-13T14:04:29.000Z",
+        "updatedAt": "2023-12-13T14:04:29.000Z"
+    },
+    {
+        "id": 11,
+        "day": 9,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Again, everything is bad, and it doesn't feel good. It seems to me that crush really does not want to communicate with me, now ignores me, did not go to school because of bad mood and feeling bad, listening to sad music, remembering that in 2016 was a lot of bad things. Almost no mood, finishing quests for the game",
+        "createdAt": "2023-12-13T14:03:13.000Z",
+        "updatedAt": "2023-12-13T14:03:13.000Z"
+    },
+    {
+        "id": 10,
+        "day": 8,
+        "month": 12,
+        "year": 2016,
+        "fullText": "This day was fucked up. For starters, when I woke up I felt really bad, everything hurt, and I didn't feel so good at all. Then I went to school, at first it was not too bad, but then something crush and girlfriends almost did not pay attention to me, the intensity was canceled, and in general I fell asleep just yet. There was no informatics, and also the informatician got sick, so I sat through 7 lessons, met crush in the corridor, said goodbye and went home. When I got on the bus I slipped (no, what a fucked up day), in the end I was in no mood at all, I still felt fucked up at home. Then I texted her and she was ignoring me for a long time, then I texted her again and she said she was busy but I think it was just an excuse and she just didn't want to hang out with me and that was it (maybe I'm winding her up but I don't know). And then there's 8 + 12 + 20 = 36. Now no fucking wonder why everything was so fucked up today, because 36 is my unlucky number.",
+        "createdAt": "2023-12-13T14:01:51.000Z",
+        "updatedAt": "2023-12-13T14:01:51.000Z"
+    },
+    {
+        "id": 9,
+        "day": 7,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Today was the final essay. Before it even the crush believed in me) I wrote it on 830 words or so, but the day was some contradictory again. At first it was good, then bad, then good again, but the good trumped the bad) When I got home I was really sleepy, so I slept for 1.5 hours. Then I worked on the game, did 2/5 quests somewhere. Chatted with the crush, but it was still ok pretty much. At first she ignored me and my mood dropped a lot, but then it turned out that she just doesn't have time( Such a day, and the intensity was canceled(( And in physics, only 6/50 points for the Olympiad( Such a day.",
+        "createdAt": "2023-12-13T14:00:35.000Z",
+        "updatedAt": "2023-12-13T14:00:35.000Z"
+    },
+    {
+        "id": 6,
+        "day": 6,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well in general the day was very inconsistent again. All day I wanted to sleep very badly and I was throwing up a lot. And from the morning a new meme came into my life - on December 30th Father Frost came in drunk. I almost all day with him yelled, but about this later. Well the first lessons I just felt really bad, vomited a lot(( In PE I managed to push 25! times, but the standard is still 4( Crush first said hello to me nicely, in English I laughed a little bit with the jokes (not about drunk), and then after the physics major, I managed to add Crush me in VK!!!)) My mood got really good after that, and along with my mood grows my determination. In core math I was laughing because of the good mood, and in my head I made up about 100 versions of drunk father frost and December 30 memes. Then I said goodbye to everybody, went to the shop, and now I am preparing to the essay, read literature, and I have almost no time again. I also had some bad thoughts for a while, but then everything got better, and with crush I communicated pretty well to begin with.",
+        "createdAt": "2023-12-12T22:59:13.000Z",
+        "updatedAt": "2023-12-12T22:59:13.000Z"
+    },
+    {
+        "id": 5,
+        "day": 5,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Well what can I say, it was a very contradictory day today. At first it was not very good at all, I was in a bad mood and had some bad thoughts in my head, but by the end of the school day things were getting better and better. I talked a little with friends of the girl I like, they even remembered my name. My classmate Lisa asked me if I needed any support. And then when I said goodbye to my crush, she sweetly said 'bye' and kind of smiled. And besides just by the end of the school day my determination was reaching a very high point and all the bad thoughts had gone away. Then I came home and had a little fun, I talked to Veronica, I laughed at my 'friends' one more time. Joked about jocks, had fun with myself)) It seemed like a pretty good day, but no, not really. Another thing contradictory was the lessons, which I had a lot today and I'm still doing them, so I have almost no free time today :c . So that's such a contradictory day today, that's why the grade is average.",
+        "createdAt": "2023-12-12T22:58:50.000Z",
+        "updatedAt": "2023-12-12T22:58:50.000Z"
+    },
+    {
+        "id": 4,
+        "day": 4,
+        "month": 12,
+        "year": 2016,
+        "fullText": "I wanted to sleep very badly that day. I also had to go to a math Olympiad. When I got there, most of the assignments were very difficult and I almost didn't understand them, but soon I believed in myself and was able to solve many. The easiest assignment was 3, even though it was geometry. After that I went home, I was sleepy, learned some history and worked a little on the game. Anyway, just a normal day.",
+        "createdAt": "2023-12-12T22:57:56.000Z",
+        "updatedAt": "2023-12-12T22:57:56.000Z"
+    },
+    {
+        "id": 3,
+        "day": 3,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Saturday. I decided to go to the movies to see a good cartoon - Moana. There was no one to go with, so I went alone. I was in a great mood after such a great start to December! And I really liked the cartoon itself. Then, I took some photos in Kuntsevo Plaza, the day seemed very good. But only until the evening. At that time I was really bombed by some game, and I couldn't hold back my emotions, and even swore. After that, I had a huge fight with my parents, I had a nervous breakdown, I wanted to die… And it seemed to me that things would not be so smooth between me and Sonia. I had the worst thoughts.",
+        "createdAt": "2023-12-12T22:57:47.000Z",
+        "updatedAt": "2023-12-12T22:57:47.000Z"
+    },
+    {
+        "id": 2,
+        "day": 2,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Seemed to go pretty well, too. Been studying for the math Olympiad again, just like yesterday. Played various games on my phone. Told one dude from 8th grade about my games, shared them with him, added him as a friend on VK. The lines weren't as great as they were yesterday. But still, the day went pretty well. The evening was kind of normal.",
+        "createdAt": "2023-12-12T22:57:38.000Z",
+        "updatedAt": "2023-12-12T22:57:38.000Z"
+    },
+    {
+        "id": 1,
+        "day": 1,
+        "month": 12,
+        "year": 2016,
+        "fullText": "It was an incredible, wonderful day. In the morning, at about 7:15, I woke up. Went to school, when I got there, the first class had already started, and I was waiting to prepare for the math Olympiad. Until 8:55, I sat in math (regular class). Later, I went to change, and I and the 8th graders were waiting for the boy who was going to prepare us for it, we waited for about 40 minutes. He wasn't there, the 8th graders were talking about alcohol and about the cost of sins, they were showing videos, and I was sitting on my account and playing a little bit on my phone. Well, I realized that it's been 40 minutes, and no one is there yet, I called my class teacher, she said that she would talk about it. And soon a boy came to us and started teaching us. So we were solving geometry. It was very difficult really. Then somewhere around 11, the eighth grade said that they had to go to the line in our building. And I called the class teacher to ask about the ruler and our class. She said she would be at the next recess, by 12:30 or so. We had recess then, and then I did some more geometry with that boy from the university. And I realized it was 11:55, got ready to go to my school, got changed, went to school, waited for class to end near the auditorium. The ruler was at the high school. I came to the line, saw my class, as well as all classes from 9 to 11. There were awards for the Olympics. In general, I was a little worried. Soon I was called, and in front of all said that the whole school relies on me. And awarded for the Olympiads, in which I passed the school round. Only, for some reason I wrote literature, although I did not participate there at all. They made a little mistake. So the line-up ends. My classmates and classmates are looking at my diploma. Aeeeeeee. Next. I walk up. to…… To class 10B. There's my friend, the one who introduced me to Sonya on November 29. He tells me that I am good. He's got a diploma in life skills. And then. I say hello to the girls and then that girl comes up to me. And she's talking to me! So cool!) Even took my diploma) She, by the way, passed in PE at the Olympics. I said she was smart.) She kinda said I was cool. Then we said goodbye. Only I somehow did not wake up after that :D She was so nice) She said something like wow, I went a lot) After all that, my mood was just great! And then, I went back to get ready for the Olympics. The rest of the day seemed to go pretty well, too.",
+        "createdAt": "2023-12-12T22:56:53.000Z",
+        "updatedAt": "2023-12-12T22:56:53.000Z"
+    }
+];
+
+
+export const diaryDayTextsRuMocks = [
+    {
+        "id": 31,
+        "day": 31,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну что, последний день 2016 прошел уже. Довольно неплохо я встретил новый год, сначала слушал музыку, делал карту мемов за 2016. Всех поздравил с новым годом, и еот тоже. Она общается сейчас все равно без особого желания, но мне кажется, что уже куда лучше, чем раньше. Мне ответили почти все, кроме одного человека, которая очень любит игнорить, не читая при этом сообщения. Под вечер уже сделал 2 конфы, в которых была классная активность, а перед нг пил блейзер. Так я встретил новый 2017 год)",
+        "createdAt": "2023-12-13T14:31:05.000Z",
+        "updatedAt": "2023-12-13T14:31:05.000Z"
+    },
+    {
+        "id": 30,
+        "day": 30,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Скучноватый день был сегодня, я проснулся уже днем, пошел в магазин за напитками для нового года. Еще мне сегодня купили блейзуху к нг. А так день не оч особенный, сидел за компом, вечером с какими-то быдло в комментах под постом, где мемы боролись - Пюрешка против Дикого Боба. Ааа а еот мне было что-то стремно писать после вчерашнего, напишу 31. ААА ЗАТО ДЕД МОРОЗ ПОДДАТЫЙ В ЭТОТ ДЕНЬ)))00",
+        "createdAt": "2023-12-13T14:30:28.000Z",
+        "updatedAt": "2023-12-13T14:30:28.000Z"
+    },
+    {
+        "id": 29,
+        "day": 29,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Утром мне было плохо, но в этот раз из-за вчерашнего бухалова из-за информатики. Мне каж я на первых уроках еще был немного бухой, но со временем все прошло. Первым уроком был матан, но мне кпц лень было все делать это, я сделал 12 заданий, остальные можно не делать было. Потом я Степе и Мише рассказал про тянку, которую я потерял на Кипре 29 июня, как раз ровно полгода прошло уже, показал переписки те. Народу было сначала вообще очень мало, но уже к 2 уроки пришли Саня, Боря, Кирилл, и весь день они пытались подшутить тип, угарнуть. Санек прикалывался, делал вид тип заходит на стр еот, веселились вообщем. Но перед литрой они рил зашли на стр еот, а Боря кинул заявку ей, но сразу же потом отменил. Хотя все кроме Сани еще не были полностью уверены, что именно ее искали. Я кстати утром нигде не видел ее( Но она заходила в сеть недавно, поэтому мб она была в школе, возможно на танцах. После 5 урока я решил внизу посмотреть. Я спустился вниз\nУвидел еот с подругой в конце коридора, но потом они зашли за коридор, и я уже больше их не видел( Я решил поискать ее. + Еще сегодня еще и 29 число. Чуть позже я ее увидел внизу, около кабинета физики. Ну и тут\nя с ней решил пообщаться там, спросил сначала, почему она так не особо интересуется там. Она сказала, что тип редко отвечает сейчас, потому что у нее какие-то проблемы там с общением с куном. Извинялась, что игнорила там иногда меня. Еще спросил, как дискотека ей? Она сказала, что ну так, но они ушли, потому что там многие пришли бухие тип, а она с подругами были адекватные, т.е не пили, а еще то что музыка была не особо (мой микс там не получилось подключить, он не оч шел, а всю музыку сам диджей из 11Б класса который ставил, но он ооч хороший диджей, он говорил тип в клубах еще им работает) , и это хорошо мне каж что они норм, ну я так и сказал, что это хорошо, рассказал также про музыку еще. И вскоре я сказал: Мне нужно тебе сказать кое-что. Она вроде сказала, ну ладно, или что-то типо того, я почему то всегда в такие моменты многое забываю. Потом я сказал, что мне это трудно будет рассказать об этом. И тут я произнес что-то на подобии: \" Ну я понимаю, что у тебя есть парень, но я хочу сказать тебе, что ты мне нравишься, а еще я переживал, когда ты не отвечала иногда мне. Я желаю тебе всего самого хорошего с парнем, ну а сам я перетерплю все, ничего.\" Она сначала вроде улыбнулась, потом было такие эмоции тип. И у меня и у нее. Что немного смеялись тип, ну бл чет очень трудно объяснить, ну ооочень неловко. Она потом сказала, тип что я найду хорошую девушку, а еще сказала. Как будто намекала на ту ее одноклассницу, которая тогда вроде 13 декабря, если я не ошибаюсь хотела со мной познакомиться тоже через этого друга. Ну тип еот ее имя называла. А дальше она что-то сказала вроде ну теперь общение будет совсем другое, или будет по другому. Я не очень понял, мб она писать мне лучше будет. А потом я спросил, ну как ты относишься к тому, что я сказал. Ток я почти забыл, что она ответила, вроде вообще ничего, и просто улыбалась, а может и ответила что-то. Потом я сказал, что тип ну давай пока, до 2017 года. И далее я ее обнял. И она меня. Причем, это было секунд 10-20 где-то примерно, если даже не дольше, и обнимались оочень крепко. Такое чувство классное было просто. Ну потом я пошел к себе в класс на чаепитие, увидел друга и закричал БРАТИИИШКА так, просто у меня настроение ах*енное было. А дальше я всем растрепал, что признался девушке, которая мне нравится том что она мне нравится. Ну и это еще не все. Я еще сказал это своей классной руководительнице. А она сказала, ну мне кажется я знаю про кого ты говоришь. Я спросил, про кого? И классная руководительница сказала - про Соню. Я еще тогда с друзьями шел. И мы все ах*ели от того, откуда она узнала? Потом весь класс узнал из тех, кто был сегодня, уже на чаепитии. Мы обсуждали, угарали там, я хохотал нз как, давно не смеялся так, и настроение офигенное было. Как-то во время чаепития моя классная руководительница сказала, что Денис-молодец, ему нравятся только хорошие и умные девочки. Она просто обсуждала в то время класс 11-Б, которые на диску бухими пришли. Ну кл.руководительница сказала то, что еот умная, хорошая, а еще она ходила в театр вместе с моим классом ну и еще с кем-то в то время, когда я был в Турции и на ноябрьские каникулы, а меня ни тогда, ни тогда не было( А потом я узнал, откуда КР узнала про то, что кто мне нравится. Она сказала, что к ней подходила еот, и она сама сказала, что она нравится мне тип, ну так сказала КР примерно. Мне теперь кажется, что шанс 90% тогда , когда друг ее спросил у меня. И почему-то моя КР сказала, что у Сони нет парня. Я сказал, что есть. Скорее всего она просто не знает этого, потому-что еще я вроде слышал, что еот говорила про кого там, кто-то в чс добавлял ее, тип спрашивали подруги ее он не писал ей? Тк. что я думаю у нее рил есть кун все-таки - 96% Ну потом мы стали расходиться потихоньку, чаепитие заканчивалось, я со всеми попрощался до 2017 года тип, пожелал своим одноклассникам и одноклассницам хорошо год провести. Вскоре я вернулся домой, а делать вообще ничего не надо было и свобооода, и переживать пока не из-за чего) Сижу в компе уже оч долго, миксы делаю среди всех месяцев полностью для года. Но еот я не писал вк, мб 30 напишу вечером.",
+        "createdAt": "2023-12-13T14:29:08.000Z",
+        "updatedAt": "2023-12-13T14:29:08.000Z"
+    },
+    {
+        "id": 28,
+        "day": 28,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Опять было утром плохо. Сегодня еот пришла в шк не только на танцы, но я с ней не общался. По обществу была оч сложная с.р. но я умудрился ее написать на 5, по биологии тоже норм написал. Весь день ходил с флешкой, искал Моисея, чтоб насчет музыки на диск обсудить. Но он ток к самой диске пришел. Уроки кончились, я пошел домой, оставил портфель, вернулся в школу на диску. Перед этим посидел немного спектакль посмотрел, затем мы с Моисеем и друзьями насчет музыки обсудили, потом я решил посмотреть, кто пришел на диску, и вдруг увидел еот, это было оч неожиданно. Но она опять со мной общалась без какого либо интереса. Дискотека потом началась, я ждал свой микс, и решил, что уже тогда с еот потанцую и признаюсь ей. Но когда микс включили, он ваще как-то фигово был, я понял что под него трудно танцевать и решили без микса, т.е сам Моисей дальше песни крутил. Песни примерно были неплохие, по типу аля 2014, тогда мне такие нравились, но ща не особо, но под них можно норм потанцевать. Настроение после этого упало немного, а позже еот ушла, я упустил свой шанс. К 7 дискотека закончилась, мы разошлись. Но зато я хорошо пообщался с тянками из 11-Б класса, понял, что они тоже хорошие на самом деле, хоть и ведут не особо здоровый образ жизни. Мы с Саней, Борей, Кириллом и одной девушкой из 10 кл вроде бы пошли из школы немного другой дорогой, т.е я также погулял еще немного. В автобусе я уже один с Саней ехали, и я уже поч рассказал, что мне нравится кое-кто из школы. Саня меня просто оч просил сказать кто именно, фото показать тип, давал слово пацана, клялся, что не расскажет никому. Ну я так тип показал, и он сказал, что тип знает еот немного, что они в театре одном были еще с Борей. Ну блин, я надеюсь, что хуже не будет, Саня не проболтается тип. Домой я пришел. И ТУТ, Я ДАЖЕ ПО ИНФОРМАТИКЕ НЕ ПРОШЕЛ НА ОЛИМПИАДУ. 10 БАЛЛОВ НЕ ХВАТИЛО, ВСЕГО 10!!!! Тут я точно понял, что рил сейчас как будто всё против меня подстроено. Меня это все вывело из себя просто, но зато я узнал, что мои проблемы с историей решились и у меня все 5 за полугодие. А потом я бухнул шампанского, рассказал Веронике, что у меня вообще случилось. Но мне кажется , что она сейчас ревнует и обиделась на меня немного. Вот такой день сегодня хреновый. Завтра я признаюсь еот.",
+        "createdAt": "2023-12-13T14:27:55.000Z",
+        "updatedAt": "2023-12-13T14:27:55.000Z"
+    },
+    {
+        "id": 27,
+        "day": 27,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну в школе было довольно неплохо тогда, утром было не так уж и хреново, как обычно, потому что поспал норм. Еот я не видел и не общался с ней, вообще стараюсь не думать про нее. Узнал предварительные баллы по пробному ЕГЭ, по информатике - 72, по русскому - 73, по английскому - 74, по мат. Профиль - 78, а по физике - 58. Физику мне надо еще подтянуть. На физре больше везло уже, по химии рил оказалась 5 за ту кр. Также я немного помог своему однокласснику с химией, но потом химичка спалила(9 На доп матике я чувствовал себя норм, но из своего В класса я там был один. Еот я совсем не писал в этот день, но я неплохо пообщался с Вероникой. Дома я уже наряжал елку, неплохо позанимался с репетитором, немного насчет дискотеки подумал там, ностальгировал также по январю 2016, а потом лег спать. И вправду, Веронике я намного интереснее, чем еот(((",
+        "createdAt": "2023-12-13T14:27:03.000Z",
+        "updatedAt": "2023-12-13T14:27:03.000Z"
+    },
+    {
+        "id": 26,
+        "day": 26,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Я конечно понимал, что если так поздно лягу, то утром будет плохо. Так и было собственно, но утро довольно неплохо начиналось. А вот дальше все начало скатываться, например, на химии была оч сложная контрольная. После химии я внизу пообщался с тян, кроме привет и как ты ничего не успел сказать, она уходила, и вообще как-то фигово общалась. Руки у нее были холодными, такими же, как и отношение ее ко мне. На физре вообще не везло почему-то, постоянно лажал, промахивался. Потом с хреновым настроением я пошел домой. Мне было плохо, уже даже не кажется, а я был уверен, что еот на меня вообще пох*ю. Я вспомнил Веронику, как с ней общался раньше. Ведь на самом деле хоть и было много ссор, но было также много чего и хорошего. От безысходности, я в автобусе написал Веронике, а так я с ней уже мес 8 не общался. Я вообще не понимал, что делал, но я до этого еще и написал еот. Дома, оказалось, что у меня по химии 5 за сегодня за что-то, но я не думаю, что за кр, ибо там оч жестко было. Вскоре я сделал уроки, и пообщался. И я понял. Даже сейчас мы с Вероникой общались НАМНОГО лучше, чем я с еот. Веронике хоть было интересно обо мне, она даже попросила рассказать подробнее, что нового и отвечала вообще отлично. С еот же сначала вроде неплохо было, но потом опять ощущение, как будто ей все равно на меня, говорила только про себя. А сейчас вообще игнорит, даже прочитав. Вероника вообще меня не игнорила сегодня. Мне кажется нету вообще смысла продолжать так общаться с еот, ей все равно будет на меня наср*ть, да и к тому же у нее уже есть кун, лучше оставить ее в покое. А с Вероникой можно пообщаться, как друзья, ну так хорошо, а потом может в 2017 встречу такую тян, которая мне еще сильнее понравится и ей будет не все равно. А может, будет что-то неожиданное? Кто знает. Насчет 28, я не думаю, что еот придет на дискотеку, но если придет, то я ей признаюсь в своих чувствах, ибо мне уже надоело это. А потом наверно забить просто. Если не придет на диску, я прост там повеселюсь, а 29 или 30 мб поговорю с еот.\n\nОценили 0 человек\n",
+        "createdAt": "2023-12-13T14:26:32.000Z",
+        "updatedAt": "2023-12-13T14:26:32.000Z"
+    },
+    {
+        "id": 25,
+        "day": 25,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Очень скучный день был, ничего почти не происходило, учил химию и историю. Еот я не писал в тот день, да и вообще не особо общался с кем-либо. На Коте Борисе хуже стало, активность уже не такая, банят, уроды, на нек пабликах(( Ночью уже рисовал последнее окно для игры, лег в 2:40 где-то.",
+        "createdAt": "2023-12-13T14:25:11.000Z",
+        "updatedAt": "2023-12-13T14:25:11.000Z"
+    },
+    {
+        "id": 24,
+        "day": 24,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Проснулся в 11 где-то, день довольно скучным был. Еот долго игнорила, но потом отвечала, правда как-то на от**бись. Мне кажется, что у нее нет никакого желания со мной общаться и ей вообще все-равно(( К вечеру ток уже более менее, но все равно так себе. Но зато я сегодня познакомился с новыми хорошими людьми, которые поддержали меня. Через Кота Бориса все, все таки хорошо, что я создал его, а то бы все намного хуже было( У него уже 900 друзей где-то, активность сегодня чуть похуже, + еще забанили на нек. пабликах (вот гады, причем я писал прост сообщение, без всяких просьб, а тип в тему чтобы было). Сделал еще микс на февраль 2017 и нарисовал еще 2 окна для игры (осталось еще одно, потом написать для всего этого код и будет 0.7 версия). Аа еще диалоги нужн сделать. Ща спать хочется, хотя уже и 25 декабря.",
+        "createdAt": "2023-12-13T14:23:09.000Z",
+        "updatedAt": "2023-12-13T14:23:09.000Z"
+    },
+    {
+        "id": 23,
+        "day": 23,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Утром чувствовал себя не очн, еот ходит только на выступления. На обществе была ср, затем была алгебра, англ, по информатике мы таблицу делали, затем на русском был классный час, мы обсуждали школьные проблемы, нам со следующего года могут поменять учителей по истории и математике. Решил проблему с историей, а по биологии оказалось, что мне писать ничего не надо было, был доп по информатике в 15:30, до этого я еот нигде не видел вообще в шк, моего одноклассника тошнило, до 15:30 сидел в классе кл. руководительницей, говорил с подругой-одноклассницей, рассказывал про игру/видео. На коте Борисе еще неплохая активность, перед информатикой я написал еот, также у того чувака, который нам к инфе готовит, сегодня др было, ему 18 исполнилось. Еот игнорила, но ответила через часа 3, потом снова неск часов игнорила, даже прочитав сообщение. Мне очень хотелось спать, и я решил лечь спать в 19 где-то на 2 часа. В 21 меня будильник разбудил, но я все еще вырубался, посмотрел вк еот ответила мне, другие тоже написали, ну а потом я окончательно лег спать",
+        "createdAt": "2023-12-13T14:22:25.000Z",
+        "updatedAt": "2023-12-13T14:22:25.000Z"
+    },
+    {
+        "id": 22,
+        "day": 22,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Вообще какой-то хреновый день сегодня. Очень хотел спать весь день и было плоховато. Еот сегодня в шк пошла все-таки, но ток на танцы. Пообщался немного с подругами еот до этого, было не очн все. И вообще мне кажется, что еот пох на меня совсем. Но уже после 5 урока я увидел еот, пообщался с ней в ее раздевалке немного, ну хоть неплохо, она даже поверила в меня, что я напишу норм пробный егэ по физике (который как раз 6 писал уроком). Еот уже лучше себя чувствует, а это хорошо, почти выздоровела. На доп информатике я уже вырубался, еще я где-то примерно в то же время написал той тян. Но она игнорила где-то часа 3, потом общались не очн((( А еще весь день общество учил и спать хочу, но уже ближе к 0 часам все стало более менее хорошо, и на Коте Борисе классная такая активность, но это уже наверно как за 23 считаться будет",
+        "createdAt": "2023-12-13T14:21:15.000Z",
+        "updatedAt": "2023-12-13T14:21:15.000Z"
+    },
+    {
+        "id": 21,
+        "day": 21,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Утром снова чувствовал себя не очн, опоздал на первый урок на неск минут. Пробный ЕГЭ по физике перенесли на четверг, а примерно после 2 или 3 урока, я встретил подруг еот, спросил у них, как она там, они сказали что передадут то, что я спрашивал, а еще они сказали, что она пришла сегодня в шк ради выступления только. Потом биология, и ср, по которой я вообще почти ничего не знал, тк не был на биологии очень давно( После биологии была алгебра, на алгебре мы угарали с Саней и Вадимом. Потом на следующей перемене я встретил еот, немного поговорил с ней, общались не очн как-то (скорее из-за ее самочувствия), да и вообще она чувствовала себя очень плохо, мне было жалко ее. Я не мог ее обнять, потому что понимаю, что не хочу тоже заболеть, ведь я могу много чего пропустить - мб я на выходных в кино с лучшей подругой пойду (если она выздоровеет (она тоже заболела, но еще неделю назад гриппом(((( ) ) 28 будет дискотека, а на ночь с 31 по 1 не хотелось бы пропустить всее и не встретить новый год классно, да и еот сама это понимала наверно. Мы не обнимались в этот раз, потом был шестой урок. После него я еще попрощался со всеми, даже с теми, с кем обычно не общался (из 11 Б). Ну на улице я уже еот написал где-то, далее все скучно как то было, мне кажется у еот не особо было желание общаться. Но зато она сказала, что у нее проблемы с другом и куном вроде бы наладились, это хорошо. Уже вечером мне надо было делать презентацию по литре, но я решил зайти на свой фейк. И тут у меня получилось сделать так, что активность стала просто огромной, и набрал >200 друзей всего за 1 день. Это классно, настроение было хорошим, но еот игнорила немного( Ну а далее что-то уж... Это может уже и было 22, но мне написал друг еот, которого я в шк вижу частенько с ней. Он резко спросил что то типа \"До меня дошли слухи, что \"имя еот\" тебе нравится, это так?\". Я не знал, что ответить и палиться не хотел, поэтому сказал, что занят немного тип, отошел от темы и сейчас сижу с фейка. Я не знаю, что будет завтра...",
+        "createdAt": "2023-12-13T14:19:39.000Z",
+        "updatedAt": "2023-12-13T14:19:39.000Z"
+    },
+    {
+        "id": 20,
+        "day": 20,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Опять утром плохо было. Я не знаю почему так, но я сильно переживаю перед тем, как перемена там, то что с еот встречу. Но сегодня ее не было в школе(( Вроде ее подруги сказали, что она только на пробник придет в шк, но оказалось, что нет (наверно, а мб и да, но я не увидел). Настроения не было особо. После 2 урока мы писали пробник егэ по матике. Я очень надеялся, что увижу ее перед 2 уроком, но нигде не было ее. Я хотел с ней очень поговорить, поддержать, но ее просто в школе не было(( На егэ пробном очень сложные были задания, я хз как написал, ведь я ж тупой и в математике не шарю, как мне показали вчерашние результаты по олимпиаде (уже позавчерашние). После того, как написал пр. егэ, я примерно полчаса ждал, искал и надеялся увидеть еот, но, когда прошло оч много времени, я смирился, и пошел домой без настроения. Еще какие-то девушки со мной сегодня общались, знали как зовут, хотя я вообще даже не общался с ними (из кл 8-9 наверно). А еще нек. из 11 параллельных сказали, что я норм постригся. Ну, тк я не увидел еот, я домой пошел весь грустный( Сразу же написал ей уже на улице. Сегодня она снова долго игнорила, потом написала, что вообще заболела и у нее еще хуже проблемы. Мне ее жалко(( После того, как вчера общался с ней в шк, мне кажется, что она стала мне намного больше нрав. А может и не только.......... Дома сначала не особо общались, игнорила многие сообщения, про меня не спрашивала, уже к вечеру только чуть чуть получше было. Перед репетитором я сделал уроки (историю, русский). С репетитором позанимались, сначала было норм настроение, потом я на уроке зашел вк, увидел, что еот проигнорила, настроение упало несколько, даж репетитор сказал, что у меня резкие перепады настроения. Прям как у Вероники. Кот Борис сегодня дошел до 200 друзей, но на нек. пабликах кинули в чс на неделю(( Причем самое обидное, где я вообще написал очень косвенно, а они сразу в чс(( на FLETCH. К ночи уже ситуация вроде получше стала, хочу чтобы еот выздоровела и все хорошо у нее было.",
+        "createdAt": "2023-12-13T14:19:04.000Z",
+        "updatedAt": "2023-12-13T14:19:04.000Z"
+    },
+    {
+        "id": 19,
+        "day": 19,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Утром мне снова было плохо почему-то, пришел в школу. (Дисклеймер: далее будет очень много мата и бомбежки) Первым уроком была история, но хорошо, что меня не спросили. Почти все обратили внимание на мою стрижку, некоторые даже орнули, потому что не ожидали, что у меня так будет. После урока 1-2 где то, я пообщался с еот немного в шк, подруга еот сказала, что мне идет стрижка. Далее были алгебра/геометрия, ничего особенного, кроме того, что я орал, когда Вадим назвал училку \"Татьяна Карлсон\". Мы всем классом заливались с этого. После были еще уроки, там литра, химия, физ-ра. Вот уже как раз перед физ-рой я еще немного пообщался с еот. Да, она курит кальян, я ей сказал, что тип лучше не надо, она норм приняла это, так что она хорошая. У нее кончили уроки, ну я с ней попрощался и обнял ее, а она меня даже. О бож, я давно этого чувства не испытывал, но оно классное. После физры, я еще узнал кое-что. А именно то, что некоторые чуваки из моего параллельного А класса залипают в мою игру, мне даж неловко стало, то что ровестники играют в мою игру, которую я сделал год назад :D Все было хорошо, до какой-то поры. Во первых, в школе еот намного лучше общается со мной, чем по сети (мне так кажется). Я понял, что ее кун игнорит ее, и у нее из-за этого не очн настроение. Блин, даже проблемы оч похожи, а еот классная. Вк она со мной сегодня почему-то снова не оч общалась, мной не интересовалась вообще. Но она сказала, что у нее не очн настроение было, и еще она игнорила частенько сегодня. Но блин, самая главная сегодняшняя проблема на самом деле не в этом. А В ТОМ, ЧТО У МЕНЯ ПО МАТИКЕ ЗА ОЛИМПИАДУ ВСЕГО 4 БАЛЛА, 4 БАЛЛА, БЛЯТЬ!!!!! Пздц, я деградирую, ну всееее. С каждым годом результаты все хуже и хуже, наверно скоро не буду знать 2+2. И причем, 4 балла только за одно задание, А ТОЧНЕЕ ЗА ТО, В КОТОРОМ Я БЫЛ УВЕРЕН, ЧТО ОНО ВООБЩЕ НЕ ПРАВИЛЬНО, ПОТОМУ ЧТО Я НАПИСАЛ ТАМ РАНДОМНО! А за те задания, где я уверен был ВООБЩЕ 0 БАЛЛОВ!!!! 0 БАЛЛОВ БЛЯТЬ, СУКА, Я ЧЕ НАХУЙ СТАРАЛСЯ ЧТОЛИ, МОЖНО БЫЛО ХОТЬ 1 ПОСТАВИТЬ, И ПРИ ЧЕМ Я ВООБЩЕ НЕ ПОНИМАЮ КАКОГО ХУЯ ДАЖЕ ЗА 3 ЗАДАНИЕ У МЕНЯ 0 БАЛЛОВ. БЛЯТЬ, ПИЗДЕЦ Я ТУПОЙ ВООБЩЕ, КАК ЖЕ БОМБИТ СУКАААААААА. ВООБЩЕ ИДТИ НЕ НАДО БЫЛО НА НЕЕ, НО К СЧАСТЬЮ ЭТОТ ГОД ПОСЛЕДНИЙ, А ИНФОРМАТИК ИЗ МОЕГО СНА БЫЛ ПРАВ, ШО ОНИ ТУПЫЕЕЕЕ, НО В СМЫСЛЕ, ЧТО Я ТАКОЙ. Ну ладно, надеюсь, что 20 декабря будет тоже хорошим днем, но без всяких проблем, типо игнора еот, хуйни какой-нибудь с игрой, олимпиадами, учебой, друзьями и прочих вещей, которые портят мне настроение. Ах, да, завтра же будет пробный ЕГЭ по матике. Ну блять, раз я такой тупой, то я его вообще на 4 балла напишу из 100. Ааа, из хорошего сегодня еще: Я создал новый фейк, и тут уже норм активность, хы, кот борис и его энергия)",
+        "createdAt": "2023-12-13T14:16:57.000Z",
+        "updatedAt": "2023-12-13T14:16:57.000Z"
+    },
+    {
+        "id": 18,
+        "day": 18,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Я лег сегодня в 5 утра и записывал видео про свою игру. Проснулся где то в 2, мне было плохо, и я думал, что то, что я ночью писал еот, было лишним. Когда я зашел вк, увидел, что она даже не прочитала это. Я ей написал и пообщался с ней немного, понял, что она не такая уж хорошая на самом деле, у нее есть вредные привычки, хотя я еще вчера узнал о ней много чего не оч хорошего, но я думаю, что ничего в этом страшного нету. Очень много уроков опять было, литру стих учить, историю делать. День вроде обычный был, но у меня откуда то появилась уверенность. Сейчас к вечеру уже еот игнорит меня жестко, думаю завтра опять (ой, уже сегодня же 19) поговорю с ней, а она как нить отмажется. Но я уже почему-то меньше переживаю из-за этого, похоже она уже не так мне нрав сильно( Еще я ночью смотрел видео про отношения, я понял, что не надо стесняться делать комплименты. И наконец завершил квесты для игры, а также снял видео, где я делаю на нее обзор.",
+        "createdAt": "2023-12-13T14:15:55.000Z",
+        "updatedAt": "2023-12-13T14:15:55.000Z"
+    },
+    {
+        "id": 17,
+        "day": 17,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Проснулся рано, хотел очень спать. Потом я пошел в парикмахерскую и мне сделали норм прическу, а затем в кфс. Мне кажется я там видел одного знакомого чувака из моей школы. Потом я вернулся домой, немного пообщался с еот. Вроде сейчас общение идет лучше, но все равно как то не особо оч, она мало интересуется мной( Весь день литру делал, химию, русский, уроков много( А еот ходила на др к подруге. Также я посмотрел ее сохраненки, они у нее странные немножко. А затем я нашел ооочень много фото Вероники Жилиной, узнал про ее другов, они не такие уж и качки вроде, кроме двух. И на самом деле оказывается то, как Вероника проводит время и гуляет с другами не выглядит так стремно, как представлял это я. Мб мне сейчас так же и кажется и с еот, и все намного проще на самом деле. А еще переделал микс декабрь 2016, и сейчас уже 18 декабря, буду елку наряжать наверно и еще пообщаюсь с еот. Интересно, как будет все дальше. Мб, я смогу стать ее близким другом и она будет больше уделять мне внимания? А также сейчас я попробую наконец завершить квесты для игры.",
+        "createdAt": "2023-12-13T14:15:15.000Z",
+        "updatedAt": "2023-12-13T14:15:15.000Z"
+    },
+    {
+        "id": 16,
+        "day": 16,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Утром мне было очень плохо. Я не знаю почему( И с еот я думал что проблемы, настроения короче совсем не было. Когда утром с тян поздоровался, она даж не спросила как у меня дела( Так, просидел 5 уроков. На физике была контрольная. И тут на уроке физик заснул и стал храпеть, а мы всем классом орнули с этого. Кончилась физика, на русском мы просто поговорили классом с кл. руководительницей насчет выпускного там, последнего звонка. 6 урок отсидел с классом, где еот. А потом... Я решил подойти к ней. Спросил, может я кажусь ей слишком навязчивым, поговорить там. Она немного засмеялась, и сказала что нет, просто у нее проблемы сейчас. Вот так вот. Похоже сейчас у всех проблемы, и у меня, и у подруги, и у друзей, и даж у тян, которая нрав мне. Может это время сейчас такое? Ну мы поговорили чутка, она даже сказала, чтобы я не переживал так сильно из за проблем, а затем уже около раздевалки я ее обнял) Настроение сразу сильно улучшилось, и я пошел ждать своей дополнительной информатики. Пока я ждал, мне разрешили попробовать научиться рисовать 3д ручкой, я создал свой первый шэдэвр, а затем начался урок. Был ток я и мой друг-одноклассник Михан, а из А класса не было вообще никого( Ну, тот чувак он мне отдельно объяснял всякие сложные и не очн сложные вещи, насчет векторов, бинарного поиска там, функций, и.т.д. Затем я пошел домой, и дома уже почти ничего не было, ну я пообщался еще с еот) А уже 17 и сегодня мне сделают нормас стрижку)",
+        "createdAt": "2023-12-13T14:13:43.000Z",
+        "updatedAt": "2023-12-13T14:13:43.000Z"
+    },
+    {
+        "id": 15,
+        "day": 15,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну все. После того, как тян, которая мне нрав сказала, что у нее есть кун, я уже думал, что хуже уже быть не может просто. Но нет, нихуя оказывается. Ладно, день начинался вообще неплохо довольно, я с другом угарал над своими детскими фото, немного поиграл в карты с еот и ее подругами, добавил в друзья Филиппа (того чувака, который тоже с еот дружит). Вроде бы не очень то и плохой день был, НО, когда я вернулся домой, то что я узнал ПЗДЦ. ФГЛ ДЛЯ ФЛЕШ ИГР ЗАКРЫЛИ БЛЯТЬ!!!! ТО ЕСТЬ У МЕНЯ ВООБЩЕ ТЕПЕРЬ ШАНС ПРОДАТЬ ИГРУ СТАЛ НАМНОГО МЕНЬШЕ И Я ПОТРАТИЛ 11 МЕСЯЦЕВ РАБОТЫ!!!! Я ТЕПЕРЬ ВООБЩЕ НЕ ЗНАЮ!!!! Но все же, хорошо, что я нашел, есть небольшая тема на форуме для флеш игр, мож найду еще спонсора или со старым свяжусь. А еще у еот есть какие-то друзья, которым 19-21. Мне каж, у меня ничего не выйдет и надо искать тян помладше( Хотя хз.",
+        "createdAt": "2023-12-13T14:12:24.000Z",
+        "updatedAt": "2023-12-13T14:12:24.000Z"
+    },
+    {
+        "id": 14,
+        "day": 14,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну, сегодня я даже в школу не пошел, ибо плохо было. Когда я проснулся, я хотел только спать, просто, чтобы уйти от реальности, не думать о том, что происходить. Но все же мне пришлось проснуться, я очень долго переживал из-за того, что было вчера, и настроения совсем у меня не было. Мне даже выучить стих было трудно. Я немного пообщался с еот. Сначала мне казалось, что она не оч хочет общаться, но я все равно пытаюсь ее поддерживать. Скинул те песни, которые я сейчас слушаю, ей даж понравились и одну она уже слышала. Мне кажется, что она со мной общается уже получше и игнорит меньше. Но я подумал, дружбу же никто еще не отменял. Могу быть просто ее очень хорошим другом, почему бы и нет? А сейчас я немного поностальгировал и поугарал по своим старым фото (2006-2009).",
+        "createdAt": "2023-12-13T14:10:55.000Z",
+        "updatedAt": "2023-12-13T14:10:55.000Z"
+    },
+    {
+        "id": 13,
+        "day": 13,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Вот бывает иногда, тебе кажется, что все отлично, все идет так, как надо, и думаешь, что ничего не сможет испортить тебе этот день. Когда все отлично, везет, но тут вдруг резко, всего лишь за одну минуту - одно сообщение все просто рушится к чертям и настроение становится совершенно противоположным. Когда ты узнаешь то, из-за чего можно дойти до такого состояния, когда тебе уже не просто плохо, а абсолютно все равно на то, что происходит вокруг. Вот так все и произошло сегодня((( Проснулся я утром, как обычно, решил выйти чуть пораньше, но на автобус не успел(( Пришлось ждать немного и скоро подъехал мой автобус до школы. Я сел в самом конце (мне просто нравится это место), и тут ко мне подсела девушка из моего параллельного класса, спросила меня про учебу там, вообще про меня, я тогда музыку слушал. Это было неожиданно, но я поговорил с ней, и потом, когда уже остановка была, пошел в школу. Первым уроком была алгебра вроде бы, ну я позанимался там, и пошел на следующий урок - на Русский. Вскоре внизу я увидел еот, но перед этим, так же как и вчера, поздоровался с Леной из 10 А. Я поговорил с еот немного, узнал почему она игнорила там, оказалось, что она просто телефон рядом оставляет, когда занята, а еще иногда пишет, что она онлайн, но это не так. Но перед этим, я увидел, как мой друган из ее же класса поцеловал ее!! Но вроде просто в щеку и вообще он альфач, поэтому мне кажется это просто по-дружески было, и ничего страшного. К тому же я знаю, что у него вроде есть девушка уже (другая). Потом мы пошли по своим урокам, у еот физра была, а у меня русский. Кончился русский, и теперь физра была у меня. Я еще немного пообщался с ней (правда уже не оч помню о чем), пошли снова по урокам. Быстро уроки пролетели, на физре 5 получил, англ тоже неплохо прошел, и тут этот друган позвал меня где то перед физикой. Оказалось, что со мной хочет познакомиться еще одна девушка из класса еот, ну я познакомился с ней тоже, она оказалась гуманитарием (хотя я это и раньше знал), и тоже отличница, как и я. Затем была физика и профильная физика (или он меня тогда перед профильной позвал, я уже не помню). Перед математикой, я уже попрощался с еот норм, про репетиторов поговорили, ну вообще оч хорошо даже. А я сказал \"У меня классный репетитор\" :D . На профильной математике я уже устал от учебы и думал о еот только. Потом я поехал домой, и вот уже было почти 5 часов. И я думал: какой же сегодня офигенный день, да еще и репетитор скоро приедет, да еще и 13 сегодня)) Я где-то еще в 16:30 решил написать еот, и уже в 17:10 где-то она ответила. Так, я дальше спросил: \"Как дела\"? Она ответила \"Не очень, а у тебя?\", или как то так. Я спросил, что случилось, это было ровно в 17:13. Я хотел спать, поэтому я лежал тогда. И тут ко мне пошли какие-то плохие мысли: \"А вдруг ща напишет, что из-за парня что-то\", потом я пробовал отогнать их от себя. Я не знаю, почему я именно об этом подумал, но когда я открыл сообщения, все просто резко оборвалось. И ДЕНЬ ПЕРЕВЕРНУЛСЯ, из офигенного дня, он превратился в разочарование для меня. Мои плохие мысли воплотились в реальность! Она написала \"С парнем проблемы\". Мне на какие-то миллисекунды плохо стало, а потом у меня стало какое-то странное состояние, когда не просто нет настроения. Когда тебе уже все равно на то, что происходит вокруг и ты просто не можешь поверить в то, что происходит. Вот так со мной и стало, а настроение пропало бесследно просто. Я хотел уйти от реальности и погрузиться в сон, а со временем это стало еще сильнее давить на меня. Ну ладно, так я написал \"Жаль(\" и погрузился в отчаяние. Через некоторое время она спросила меня \"Что делаешь?\" Из-за того, что я чувствовал тогда, я ее поигнорил мин 10 где-то, но все же ответил дальше, и вообще как-то сам стал игнорить. Ну вот остался уже час до репетитора, было 18 где-то. Я сделал англ, и встретил репетитора без настр совсем. К 18:50 мне просто уже хотелось сдохнуть, ибо мне кажется, что все слишком плохо у меня и всегда подстраивается против меня. Но оказалось, что у меня все-таки очень \"классный репетитор\". Он смог меня поддержать, поговорить на эту тему после занятий, послушать грустную музыку. Он мне сказал, что мне сейчас как раз стоит послушать ее и ни о чем не думать. Я ему сказал, что он не только отличный учитель, но и очень хороший человек, он даже всплакнул немного и засмеялся. Как же, блин, я обожаю его. Я послушал музыку и смирился с тем, немного написал еот, и сейчас пишу это сообщение. Я не пойду в школу завтра, так как мне плохо, нет настроения. И вообще мне правда кажется, что все вокруг подстраивается специально против меня. Весь год мне не везло часто, такое ощущение, как будто меня судьба ненавидит просто и делает специально все то, чтобы лишить меня счастья и погрузить в депрессию. Если что-то приходит хорошее в мою жизнь, то всегда после этого через несколько дней происходит плохое, что закрывает все это хорошое, так что...",
+        "createdAt": "2023-12-13T14:07:06.000Z",
+        "updatedAt": "2023-12-13T14:07:06.000Z"
+    },
+    {
+        "id": 12,
+        "day": 12,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну сегодня как бы должен был быть 5 плохой день. Хочу сказать, что утром мне опять плохо было, и я пошел ко 2 уроку. Потом перед 3-м уроком я переживал и пошел искать тян. Сначала я увидел Лену из 10 А, поздоровался с ней, а за ней шла еот, я с еот тоже поздоровался, она извинялась много раз тип что занята была, не могла ответить, и вообще мы мило поговорили на самом деле, я даж поднял у нее что-то упало. Но я забыл спросить почему она в сети сидит и игнорит, но попросил не игнорить тип, что настроения не было, а еще она сказала мне, что я не надоел ей. Хотя я не знаю, насколько это правда. Потом был матан, а затем я писал статград по англ языку. Еще немного пообщался с тян и ее подругами, но с подругами она почему-то ведет не так мило, как когда я одну ее вижу. Они о какой-то очень странной теме говорили за столом тогда (не хочу лучш думать об этом, хотя мб я и не понял ничего), ну и в конце после физры я уже попрощался с ними, но не смог так и спросить у нее главного. Дома я физику оч долго учил( И делал репетиторский англ еще. Написал тян дома, она в этот раз не так игнорила, но отвечала как-то не охотно, мне кажется, ну нз (как-то на отъебись мне каж, но ток не совсем, а просто без особого желания). А вот сейчас уже не 12, а 13, где то часа 2 игнорит( . Над еще будет спросить у нее. А еще я нашел фото тех качков с Кипра и поугарал. А ведь уже 13 декабря (жаль, что не марта) и еще репетитор))) Надеюсь, что репетиторский денек покажет себя во всей своей красе и не подведет)",
+        "createdAt": "2023-12-13T14:05:48.000Z",
+        "updatedAt": "2023-12-13T14:05:48.000Z"
+    },
+    {
+        "id": 11,
+        "day": 11,
+        "month": 12,
+        "year": 2016,
+        "fullText": "День 4. Утром не было вновь настроения, да еще мне надо идти на олимпиаду по информатике. Я устал уже от этих дней, надеюсь, что завтрашний будет последним. По олимпиаде я набрал 330/500 баллов, затем зашел в KFC и домой делать заочную вторую олимпиаду. Но к удивлению, там оказались точно те же задания, что и на муниципальной. Я в итоге решил, и получил 410/500 баллов, и понял, как я лоханулся тогда на муниципальной с 4 заданием (там набрал 30 баллов, а дома все 100/100). И скорее всего то, что я дома делал никак не повлияет, тк будут смотреть у меня результаты муниципальной. Блин. Уже наступило 12 декабря. Я надеюсь это будет последний день моих мучений и я налажу отношения с еот. Как же все надоело это... Будет пятый хуевый день. Но, я надеюсь, что он будет противоречивым, а потом все хорошо. Ибо этот декабрь уже меня с ума сводит.. ",
+        "createdAt": "2023-12-13T14:05:18.000Z",
+        "updatedAt": "2023-12-13T14:05:18.000Z"
+    },
+    {
+        "id": 10,
+        "day": 10,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Уже третий день нету настроения. Еот игнорит, а после того, как я спросил у нее, не надоел ли я ей, вообще перестала отвечать, и уже сутки прошли. Делал долго общество учил. Чтобы уйти от своих проблем, пришлось бухнуть 5/3 стакана пива. Теперь настроение получше, я почти не переживаю об этом, хоть и общаюсь с друзьями на эту тему, но завтра все снова будет плохо(( И настроения не будет( А еще завтра олимпиада по информатике, даже две",
+        "createdAt": "2023-12-13T14:04:29.000Z",
+        "updatedAt": "2023-12-13T14:04:29.000Z"
+    },
+    {
+        "id": 9,
+        "day": 9,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Опять же все плохо, и чувствую не очн. Мне кажется, что еот рил не хочет со мной общаться, сейчас игнорит, в школу из-за плохого настроения и самочувствия не пошел, слушал грустную музыку, вспоминал, что в 2016 было много чего плохого. Настроения почти нету, доделываю квесты для игры",
+        "createdAt": "2023-12-13T14:03:13.000Z",
+        "updatedAt": "2023-12-13T14:03:13.000Z"
+    },
+    {
+        "id": 8,
+        "day": 8,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Это не день, а какой-то пиздец просто. Для начала, когда я проснулся мне кпц как плохо было, все болело и вообще чувствовал так себе. Потом я пошел в школу, поначалу все вроде не очн плохо было, но потом что-то тян и подруги на меня почти не обращали внимания, интенсив совсем отменили, да и вообще я засыпал просто еще. Информатики профильной не было, еще и информатик заболел, ну вщ пздос, отсидел 7 уроков, встретил тян в коридоре, попрощался, пошел домой. Когда я зашел в автобус, я поскользнулся (не, ну че за пиздец день), в итоге настроения совсем не было, еще дома себя до сих пор чувствовал хуево. Потом я написал тян, а она игнорила очень долго, потом написал еще раз, она сказала, что занята немного, но мне кажется, что это все тип отмазок, а она просто не хочет со мной общаться и все (мож я накручиваю, но хз ваще). И еще 8 + 12 + 20 = 36. Теперь, блять, не удивительно, почему сегодня все так хуево было, ведь 36 - мое несчастливое число",
+        "createdAt": "2023-12-13T14:01:51.000Z",
+        "updatedAt": "2023-12-13T14:01:51.000Z"
+    },
+    {
+        "id": 7,
+        "day": 7,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Сегодня было итоговое сочинение. Перед ним в меня еот (это раньше такой идиотский сленг был, как я называл девушку, которая нравится) даже поверила) Я написал его на 830 слов где-то, но день был опять какой-то противоречивый. Сначала было хорошо, потом плохо, потом снова хорошо, но хорошее победило плохое) Когда я вернулся домой, мне очень сильно спать хотелось, и я поспал 1.5 часа. Затем я поделал игру, 2/5 квестов сделал где-то. Общался с тян, которая нрав, но все же было норм довольно. Сначала она игнорила, и у меня настроение упало сильно, но потом оказалось, что просто времени нету( Вот такой вот день, и еще интенсив отменили(( И по физике всего 6/50 баллов за олимпиаду( Такой вот денек.",
+        "createdAt": "2023-12-13T14:00:35.000Z",
+        "updatedAt": "2023-12-13T14:00:35.000Z"
+    },
+    {
+        "id": 6,
+        "day": 6,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну вообще день опять же очень противоречивый был. Весь день я очень сильно спать хотел и меня тошнило сильно. А с самого утра в моей жизни появился новый мем - 30 декабря Дед Мороз приходит поддатым. Я почти весь день с него орал, ну об этом попозже. Ну первых уроках мне просто плохо очень было, тошнило сильно(( На физ-ре мне удалось отжаться 25! раз, но по нормам это все равно 4( Тян сначала со мной мило поздоровалась, на англ я немного поугарал с приколов (не про поддатого), а потом уже после профильной физике мне удалось, чтобы тян добавила меня вк!!)) У меня настроения стало после этого очень хорошим, а вместе с настроением растет и моя детерминация. На профильной математике из-за хорошего настроения я просто угарал и в голове придумал около 100 вариантов мемов про поддатого деда мороза и 30 декабря. Потом со всеми норм попрощался, сходил в магаз, и сейчас готовлюсь к сочинению, читаю произведения, времени же опять нету почти. Ну а также меня некоторое время опять посещали какие то дурные мысли, но потом все наладилось, а с тян я пообщался довольно неплохо для начала.",
+        "createdAt": "2023-12-12T23:08:55.000Z",
+        "updatedAt": "2023-12-12T23:08:55.000Z"
+    },
+    {
+        "id": 5,
+        "day": 5,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Ну как сказать, оочень противоречивый день был сегодня. Сначала вообще было все не очень как-то, настроения не было почти и в голову лезли плохие мысли, но к концу учебного дня все становилось лучше и лучше. Я поговорил немного с подругами тян, они даж помнят как зовут меня. Одноклассница Лиза поинтересовалась нужна ли поддержка? А потом, когда я попрощался с тян, она мило сказала \"пока\" и вроде даже улыбнулась. Да и к тому же как раз к концу учебного дня мой детерминейшен достигал очень большого значения и все плохие мысли отошли. Потом я пришел домой и немного повеселился, поозвучивал диалог с вероникой, поугарал над \"другами\" еще раз. Пошутил про качков, повеселился сам с собой)) Вроде день довольно хороший был, но нет, не особо. Еще одно противоречие это уроки, которых сегодня было оочень много, и я до сих пор их делаю, так что свободного времени почти нету сегодня :с . Вот такой вот противоречивый день сегодня, поэтому и оценка средняя.",
+        "createdAt": "2023-12-12T23:08:13.000Z",
+        "updatedAt": "2023-12-12T23:08:13.000Z"
+    },
+    {
+        "id": 4,
+        "day": 4,
+        "month": 12,
+        "year": 2016,
+        "fullText": "В тот день я очень сильно хотел спать. А еще мне нужно было ехать на олимпиаду по математике. Когда я приехал туда, большинство заданий были очень сложными, и я почти не понимал их, но вскоре я поверил в себя и смог решить многие. Самым легким было задание 3, хотя это была геометрия. После этого я пошел домой, очень хотелось спать, выучил немного историю и немного поработал над игрой. В общем, обычный день.",
+        "createdAt": "2023-12-12T23:06:15.000Z",
+        "updatedAt": "2023-12-12T23:06:15.000Z"
+    },
+    {
+        "id": 3,
+        "day": 3,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Суббота. Я решил сходить в кино, чтобы посмотреть неплохой мультфильм - 'Моана'. Идти было не с кем, поэтому я пошел один. У меня было отличное настроение после такого замечательного начала декабря! Да и сам мультфильм мне очень понравился. Потом я сделал несколько фотографий в Кунцево Плаза, день казался очень хорошим. Но только до вечера. В это время меня очень сильно бомбануло от какой-то игры, и я не смог сдержать эмоций и даже выругался. После этого я сильно поругался с родителями, у меня был нервный срыв, я хотел умереть... И мне казалось, что между мной и Соней не все будет так гладко. Меня посещали самые страшные мысли.",
+        "createdAt": "2023-12-12T23:05:32.000Z",
+        "updatedAt": "2023-12-12T23:05:32.000Z"
+    },
+    {
+        "id": 2,
+        "day": 2,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Вроде бы все прошло неплохо. Снова, как и вчера, готовился к олимпиаде по математике. Играл в разные игры на телефоне. Рассказал одному чуваку из 8-го класса о своих играх, поделился с ним, добавил его в друзья в VK. Таких классных линеек как вчера не было. Но все равно день прошел неплохо. Вечер прошел нормально.",
+        "createdAt": "2023-12-12T23:04:23.000Z",
+        "updatedAt": "2023-12-12T23:04:23.000Z"
+    },
+    {
+        "id": 1,
+        "day": 1,
+        "month": 12,
+        "year": 2016,
+        "fullText": "Это был невероятный, чудесный день. Утром, примерно в 7:15, я проснулся. Пошел в школу, когда пришел, первый урок уже начался, и меня ждала подготовка к олимпиаде по математике. До 8:55 я сидел на математике (в обычном классе). Потом я пошел на перемену, и мы с восьмиклассниками ждали парня, который должен был нас подготовить, мы ждали около 40 минут. Его не было, восьмиклассники говорили об алкоголе и о цене грехов, показывали видео, а я сидел на своем аккаунте и немного играл на телефоне. Ну, я понял, что прошло уже 40 минут, а никого нет, позвонил классному руководителю, она сказала, что обсудит это. И вскоре к нам пришел парень и начал нас учить. Так мы решали геометрию. Это было очень сложно на самом деле. Потом, где-то в 11, восьмой класс сказал, что им нужно идти на линейку в нашем здании. И я позвонил классному руководителю, чтобы спросить про линейку и наш класс. Она сказала, что будет на следующей перемене, к 12:30 или около того. Тогда у нас была перемена, а потом я еще немного позанимался геометрией с тем парнем из университета. Я понял, что уже 11:55, собрался и пошел в свою школу, переоделся, пошел в школу, ждал окончания уроков возле актового зала. Линейка была в старшей школе. Я подошел к линейке, увидел свой класс, а также все классы с 9 по 11. Там были награды за олимпиады. В общем, я немного волновался. Вскоре меня вызвали, и при всех сказали, что вся школа на меня рассчитывает. И наградили за олимпиады, в которых я прошел школьный тур. Только вот почему-то мне написали литературу, хотя я там вообще не участвовал. Они немного ошиблись. Вот и закончилась линейка. Мои одноклассники и одноклассницы смотрят на мою грамоту. Аиииии. Дальше. Я подхожу к классу 10Б. Там стоит мой друг, тот самый, который познакомил меня с Соней 29 ноября. Он говорит мне, что я молодец. У него диплом по ОБЖ. А потом. Я здороваюсь с девочками, и тут ко мне подходит эта девушка. И она со мной разговаривает! Так круто!) Даже грамоту посмотрела) Она, кстати, прошла по физкультуре на олимпиаде. Я сказал, что она молодец). Она вроде как сказала, что я крутой. Потом мы попрощались. Только я почему-то не проснулась после этого :D Она была такая милая) Сказала что-то типа вау, я многое прошел) После всего этого мое настроение было просто отличным! А потом я вернулся к подготовке к олимпиаде. Остаток дня тоже прошел вроде бы неплохо.",
+        "createdAt": "2023-12-12T23:03:43.000Z",
+        "updatedAt": "2023-12-12T23:03:43.000Z"
+    }
+];

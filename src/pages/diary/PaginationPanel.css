@@ -1,0 +1,72 @@
+
+.pagination {
+    background-color: rgba(250, 235, 215, 0.612);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.pageBtnSide {
+    margin: auto;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(222, 184, 135, 0.729);
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans';
+    font-size: 15px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.pageBtnPrev2 {
+    margin: auto;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(222, 150, 87, 0.729);
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans';
+    font-size: 15px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.pageBtnPrev {
+    margin: auto;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(228, 132, 48, 0.729);
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans';
+    font-size: 15px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.pageBtnCur {
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(210, 105, 30, 0.756);
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans';
+    font-size: 25px;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25), inset 0 3px rgba(255, 255, 255, 0.1);
+}

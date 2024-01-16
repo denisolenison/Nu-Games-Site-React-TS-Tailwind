@@ -1,6 +1,6 @@
 
 import { getMonthId } from '../../../../helpers/baseHelpers';
-import { diaryMonths, diaryMonthsTexts } from '../../diary.mocks';
+import { diaryMonths, diaryMonthsTexts } from '../../../../mocks/diary.mocks';
 import './DiaryMonthsTable.css';
 import DiaryMonthsTableHeader from './DiaryMonthsTableHeader/DiaryMonthsTableHeader';
 import DiaryMonthsTableRow from './DiaryMonthsTableRow/DiaryMonthsTableRow';

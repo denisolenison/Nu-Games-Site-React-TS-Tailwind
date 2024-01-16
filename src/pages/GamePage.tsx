@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { gamesColors, getIconLinkOnPage } from '../mocks/games.mocks';
 import './GamePage.css';
+import Header from './header/Header';
 
 function GamePage({game}: any) {
     
@@ -10,6 +11,7 @@ function GamePage({game}: any) {
 
     return (
       <>
+      <Header></Header>
         <div className="gp_gameblock" style={{backgroundColor: color}}>
             <img className="gameicon" src={getIconLinkOnPage(game.id)}></img>
             <div className="gameblock2" style={{width: "100%"}}>
