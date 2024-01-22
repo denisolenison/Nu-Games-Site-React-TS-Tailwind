@@ -1,17 +1,15 @@
 
 import { Link } from 'react-router-dom';
 import './DiaryFooter.css';
+import DiaryFooterButton from './DiaryFooterButton/DiaryFooterButton';
 
 function DiaryFooter() {
 
     return (
       <div className='diaryFooter'>
-        <Link to='/diary/days'><button className="diaryTypeButton">
-          <b>Days</b>
-        </button></Link>
-        <Link to='/diary/months'><button className="diaryTypeButton">
-          <b>Months</b>
-        </button></Link>
+        <DiaryFooterButton link='/diary/days' name='Days' />
+        <DiaryFooterButton link='/diary/months' name='Months' />
+        <DiaryFooterButton link='/diary/graphs' name='Graphs' />
       </div>
     );
   }

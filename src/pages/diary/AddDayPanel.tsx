@@ -6,7 +6,11 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { getDate, getMonth, getYear } from 'date-fns';
 import * as Yup from 'yup';
 
-function AddDayPanel({nextDate} : any) {
+interface AddDayPanelProps {
+  nextDate: Date;
+}
+
+function AddDayPanel({nextDate} : AddDayPanelProps) {
 
     let lang = localStorage.getItem("lang") ?? "en";
 

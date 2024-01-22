@@ -1,3 +1,6 @@
+import { getDay } from "date-fns";
+import { lZero } from "../../helpers/baseHelpers";
+
 export const diaryMontsInit = (diaryMonths: any) => {
     const newDiaryMonths = diaryMonths.map((dMonth: any) => {
         let realScore = dMonth.baseScore;
@@ -49,11 +52,16 @@ export const diaryMontsInit = (diaryMonths: any) => {
         }
   
         const percText = Math.round(percent*1000)/10 + "%";
+
+        const dateFirst = new Date(`${dMonth.year}-${lZero(dMonth.month)}-01`)
+
+        const weekDay = getDay(dateFirst);
   
         return {
           id: dMonth.id,
           year: dMonth.year,
           month: dMonth.month,
+          weekDay,
           score: realScore,
           pc: percent,
           percent: percText,

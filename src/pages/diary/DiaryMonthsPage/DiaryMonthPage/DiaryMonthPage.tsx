@@ -6,6 +6,7 @@ import ScoreBlockMonth from "./ScoreBlockMonth/ScoreBlockMonth";
 import './DiaryMonthPage.css';
 import Header from "../../../header/Header";
 import { Link } from "react-router-dom";
+import DiaryFooter from "../../DiaryFooter/DiaryFooter";
 
 function DiaryMonthPage({mData}:any) {
 
@@ -49,6 +50,7 @@ function DiaryMonthPage({mData}:any) {
             <div className="pt-5 pl-10 pr-10 pb-5 mt-5">{lang == "ru" ? monthText?.text_rus: monthText?.text_en}</div></h2>
             <iframe className="p-5 mt-5 musicVideo" width="720" height="480" src={lang == "ru" ? monthText?.song_rus : monthText?.song_en} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
+        <DiaryFooter></DiaryFooter>
       </>
     );
   }

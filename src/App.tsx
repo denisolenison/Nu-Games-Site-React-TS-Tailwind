@@ -13,6 +13,7 @@ import { diaryMontsInit } from './pages/diary/DiaryMonthsInit';
 import axios from 'axios';
 import { addDays } from 'date-fns';
 import { DiaryDay, DiaryFlowScore } from './diary.types';
+import DiaryGraphsPage from './pages/diary/DiaryGraphsPage/DiaryGraphsPage';
 
 function App() {
   const games = CommonGamesFullInfo;
@@ -146,6 +147,7 @@ function App() {
       <Route path="/diary/days" element= { <DiaryPage page={1} maxPage={pages} diaryData={diaryData[0] ?? []} nextDate={nextDate}/>} />
       {pageStarts.map((_page, index) => <Route path={`/diary/days/${index+1}`} element= { <DiaryPage page={index+1} maxPage={pages} diaryData={diaryData[index] ?? []} nextDate={nextDate}/>}  key={index} />)}
       <Route path="/diary/months" element= { <DiaryMonthsPage newDiaryMonths={newDiaryMonths} avg={avg} />} />
+      <Route path="/diary/graphs" element= { <DiaryGraphsPage newDiaryMonths={newDiaryMonths} avg={avg} />} />
       {unityGames.map((game, index) => <Route path={`/unity_games/${game.id}`} element= { <UnityGamePage game={game} />}  key={index} />)}
       {games.map((game, index) => <Route path={`/games/${game.id}`} element= { <GamePage game={game} />}  key={index} />)}
       {newDiaryMonths.map((mData:any, index:number) => <Route path={`/diary/month/${mData.year}/${mData.month}`} element= { <DiaryMonthPage mData={mData} />}  key={index} />)}
@@ -154,3 +156,4 @@ function App() {
 }
 
 export default App;
+

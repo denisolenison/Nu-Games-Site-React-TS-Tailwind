@@ -4,7 +4,12 @@ import DiaryFooter from '../DiaryFooter/DiaryFooter';
 import './DiaryMonthsPage.css';
 import DiaryMonthsTable from './DiaryMonthsTable/DiaryMonthsTable';
 
-function DiaryMonthsPage({newDiaryMonths, avg}:any) {
+interface DiaryMonthsPageProps {
+  newDiaryMonths: any,
+  avg: number,
+}
+
+function DiaryMonthsPage({newDiaryMonths, avg}: DiaryMonthsPageProps) {
   document.body.style.backgroundImage = "url('bg_diary.jpg')";
 
     return (

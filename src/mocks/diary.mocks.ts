@@ -3,7 +3,7 @@
 export let language = localStorage.getItem("language") ?? "en";
 
 
-export const isAdmin = false;
+export const isAdmin = true;
 
 
 export const diaryMonths = [

@@ -42,6 +42,14 @@ export const getMonthName2 = (month: any, lang: string) => {
     return months[month - 1];
 };
 
+export const getMonthNameShort = (month: any, lang: string) => {
+    let months = ['Янв.', 'Фев.', 'Мар.', 'Апр.', 'Май', 'Июн.', 'Июл.', 'Авг.', 'Сен.', 'Окт.', 'Ноя.', 'Дек.'];
+    if (lang == "en") {
+        months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    }
+    return months[month - 1];
+};
+
 export const getWeekdayName = (weekday: any, lang: string) => {
     let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Y', 'Curd', 'Friday', 'Saturday'];
     if (lang == "ru") {
